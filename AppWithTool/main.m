@@ -14,13 +14,13 @@ int execve(const char *path, char *const argv[], char *const envp[]);
 int execvp(const char *file, char *const argv[]);
 int execvpe(const char *file, char *const argv[], char *const envp[]);
 void runScript(NSString* scriptName);
-
+void logstuff(int *count);
 
 int execv(const char *path, char *const argv[]){
     
-    //printf("execv:");
+    printf("execv:_____________________________\n");
     //printf("=========%s", path);
-    //printf("=========%s", argv);
+    printf("=========%c=======", *argv);
     //execv("/usr/local/bin/nostril", &argv[argc]);
     return 0; }
 int execve(const char *path, char *const argv[], char *const envp[]){ return 0; }
@@ -58,16 +58,38 @@ void runScript(NSString* scriptName)
 }
 //------------------------------------------------------
 
+void logargc(int *count){
+    
+    printf("logargc argc = %d\n",*count);
+}
 
 int main(int argc, char const *argv[]) {
     @autoreleasepool {
+        
+        logargc(&argc);
+        //printf("argc=%d", argc);
+        //printf("argv[argc]=%s", argv[argc]);
+        //NSLog(@"argc=%d", argc);
+        //NSLog(@"argv[argc-1]=%s", argv[argc-1]);
+        //NSLog(@"argv[argc-2]=%s", argv[argc-2]);
+        //NSLog(@"argv[argc-3]=%s", argv[argc-3]);
+        //NSLog(@"");
+        //NSLog(@"");
+        //NSLog(@"");
         // Setup code that might create autoreleased objects goes here.
         // runScript(@"Script.sh");
         // printf("=========%s", &argv[argc]);
         // execv("/usr/local/bin/nostril", "--sec");
-        // execv("/usr/local/bin/ls", &argv[argc]);
+        
+        // int execv(const char *path, char *const argv[]){
+        //const char myarg = **argv;
+        //execv("/usr/local/bin/ls", myarg);
+        //execv("/usr/local/bin/ls", &*argv);
+        execv(&*argv[0], &*argv);
+
         // runScript(@"Script.sh");
-        runScript(@"template.sh");
+        //runScript(@"template.sh");
+        //runScript(@"Script.sh");
 
 
     }
