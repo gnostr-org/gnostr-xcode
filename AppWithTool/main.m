@@ -6,6 +6,7 @@
 //
 
 //REF: https://developer.apple.com/forums/thread/106590
+#import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
 
 int execv(const char *path, char *const argv[]);
@@ -15,7 +16,13 @@ int execvpe(const char *file, char *const argv[], char *const envp[]);
 void runScript(NSString* scriptName);
 
 
-int execv(const char *path, char *const argv[]){ return 0; }
+int execv(const char *path, char *const argv[]){
+    
+    //printf("execv:");
+    //printf("=========%s", path);
+    //printf("=========%s", argv);
+    //execv("/usr/local/bin/nostril", &argv[argc]);
+    return 0; }
 int execve(const char *path, char *const argv[], char *const envp[]){ return 0; }
 int execvp(const char *file, char *const argv[]){ return 0; }
 int execvpe(const char *file, char *const argv[], char *const envp[]){ return 0; }
@@ -52,10 +59,17 @@ void runScript(NSString* scriptName)
 //------------------------------------------------------
 
 
-int main(int argc, const char * argv[]) {
+int main(int argc, char const *argv[]) {
     @autoreleasepool {
         // Setup code that might create autoreleased objects goes here.
-        runScript(@"Script.sh");
+        // runScript(@"Script.sh");
+        // printf("=========%s", &argv[argc]);
+        // execv("/usr/local/bin/nostril", "--sec");
+        // execv("/usr/local/bin/ls", &argv[argc]);
+        // runScript(@"Script.sh");
+        runScript(@"template.sh");
+
+
     }
     return NSApplicationMain(argc, argv);
 }

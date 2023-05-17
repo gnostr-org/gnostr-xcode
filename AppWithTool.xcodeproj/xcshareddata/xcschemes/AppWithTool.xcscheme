@@ -3,9 +3,23 @@
    LastUpgradeVersion = "1240"
    version = "1.3">
    <BuildAction
-      parallelizeBuildables = "NO"
+      parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B542C4329F88D1E000A03AF"
+               BuildableName = "AppWithTool.app"
+               BlueprintName = "AppWithTool"
+               ReferencedContainer = "container:AppWithTool.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
@@ -44,18 +58,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4B542C8629F88E6B000A03AF"
-            BuildableName = "ToolX"
-            BlueprintName = "ToolX"
+            BlueprintIdentifier = "4B542C4329F88D1E000A03AF"
+            BuildableName = "AppWithTool.app"
+            BlueprintName = "AppWithTool"
             ReferencedContainer = "container:AppWithTool.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "testing...."
-            isEnabled = "YES">
-         </CommandLineArgument>
-      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -67,9 +75,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4B542C8629F88E6B000A03AF"
-            BuildableName = "ToolX"
-            BlueprintName = "ToolX"
+            BlueprintIdentifier = "4B542C4329F88D1E000A03AF"
+            BuildableName = "AppWithTool.app"
+            BlueprintName = "AppWithTool"
             ReferencedContainer = "container:AppWithTool.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

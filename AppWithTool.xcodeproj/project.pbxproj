@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B3549F32A14822E00F4FF5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B542C5329F88D22000A03AF /* main.m */; };
+		4B354A182A1482B100F4FF5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B354A132A1482B100F4FF5A /* Foundation.framework */; };
+		4B354A1A2A14830000F4FF5A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B354A192A14830000F4FF5A /* Cocoa.framework */; };
+		4B354A272A14835A00F4FF5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B542C8929F88E6B000A03AF /* main.m */; };
+		4B354A382A14841200F4FF5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B354A132A1482B100F4FF5A /* Foundation.framework */; };
+		4B354A392A14841800F4FF5A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B354A192A14830000F4FF5A /* Cocoa.framework */; };
+		4B354A772A14929200F4FF5A /* template.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4B354A762A14929200F4FF5A /* template.sh */; };
+		4B354A7C2A1492A200F4FF5A /* template.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B354A762A14929200F4FF5A /* template.sh */; };
 		4B542C4929F88D1F000A03AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B542C4829F88D1F000A03AF /* AppDelegate.m */; };
 		4B542C4C29F88D1F000A03AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B542C4B29F88D1F000A03AF /* ViewController.m */; };
 		4B542C4E29F88D22000A03AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B542C4D29F88D22000A03AF /* Assets.xcassets */; };
 		4B542C5129F88D22000A03AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B542C4F29F88D22000A03AF /* Main.storyboard */; };
-		4B542C5429F88D22000A03AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B542C5329F88D22000A03AF /* main.m */; };
 		4B542C5F29F88D23000A03AF /* AppWithToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B542C5E29F88D23000A03AF /* AppWithToolTests.m */; };
 		4B542C6A29F88D23000A03AF /* AppWithToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B542C6929F88D23000A03AF /* AppWithToolUITests.m */; };
-		4B542C8A29F88E6B000A03AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B542C8929F88E6B000A03AF /* main.m */; };
 		4B542CBE29F89419000A03AF /* ToolX in Embed Helper Tools */ = {isa = PBXBuildFile; fileRef = 4B542C8729F88E6B000A03AF /* ToolX */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4BD59FEF2A1444880041CB20 /* Script.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4BD59FE82A1444420041CB20 /* Script.sh */; };
 		4BD5A0142A1449D00041CB20 /* ToolX in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B542C8729F88E6B000A03AF /* ToolX */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -22,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4B3549FE2A14826600F4FF5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B542C3C29F88D1E000A03AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B542C8629F88E6B000A03AF;
+			remoteInfo = ToolX;
+		};
 		4B542C5B29F88D23000A03AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4B542C3C29F88D1E000A03AF /* Project object */;
@@ -35,13 +48,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4B542C4329F88D1E000A03AF;
 			remoteInfo = AppWithTool;
-		};
-		4B542CAB29F89320000A03AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4B542C3C29F88D1E000A03AF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4B542C8629F88E6B000A03AF;
-			remoteInfo = ToolX;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -73,6 +79,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 12;
 			files = (
+				4B354A7C2A1492A200F4FF5A /* template.sh in CopyFiles */,
 				4BD5A0252A144A6B0041CB20 /* ToolX in CopyFiles */,
 				4BD59FEF2A1444880041CB20 /* Script.sh in CopyFiles */,
 			);
@@ -81,6 +88,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4B354A132A1482B100F4FF5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4B354A192A14830000F4FF5A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4B354A762A14929200F4FF5A /* template.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = template.sh; path = AppWithTool/template.sh; sourceTree = "<group>"; };
 		4B542C4429F88D1F000A03AF /* AppWithTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWithTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B542C4729F88D1F000A03AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4B542C4829F88D1F000A03AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -108,6 +118,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B354A392A14841800F4FF5A /* Cocoa.framework in Frameworks */,
+				4B354A382A14841200F4FF5A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,21 +141,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B354A1A2A14830000F4FF5A /* Cocoa.framework in Frameworks */,
+				4B354A182A1482B100F4FF5A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B354A122A1482B000F4FF5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B354A192A14830000F4FF5A /* Cocoa.framework */,
+				4B354A132A1482B100F4FF5A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4B542C3B29F88D1E000A03AF = {
 			isa = PBXGroup;
 			children = (
+				4B354A762A14929200F4FF5A /* template.sh */,
 				4BD59FE82A1444420041CB20 /* Script.sh */,
 				4B542C4629F88D1F000A03AF /* AppWithTool */,
 				4B542C5D29F88D23000A03AF /* AppWithToolTests */,
 				4B542C6829F88D23000A03AF /* AppWithToolUITests */,
 				4B542C8829F88E6B000A03AF /* ToolX */,
 				4B542C4529F88D1F000A03AF /* Products */,
+				4B354A122A1482B000F4FF5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,7 +243,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4B542CAC29F89320000A03AF /* PBXTargetDependency */,
+				4B3549FF2A14826600F4FF5A /* PBXTargetDependency */,
 			);
 			name = AppWithTool;
 			productName = AppWithTool;
@@ -329,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B542C4E29F88D22000A03AF /* Assets.xcassets in Resources */,
+				4B354A772A14929200F4FF5A /* template.sh in Resources */,
 				4B542C5129F88D22000A03AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,8 +402,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B3549F32A14822E00F4FF5A /* main.m in Sources */,
 				4B542C4C29F88D1F000A03AF /* ViewController.m in Sources */,
-				4B542C5429F88D22000A03AF /* main.m in Sources */,
 				4B542C4929F88D1F000A03AF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,13 +428,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B542C8A29F88E6B000A03AF /* main.m in Sources */,
+				4B354A272A14835A00F4FF5A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4B3549FF2A14826600F4FF5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B542C8629F88E6B000A03AF /* ToolX */;
+			targetProxy = 4B3549FE2A14826600F4FF5A /* PBXContainerItemProxy */;
+		};
 		4B542C5C29F88D23000A03AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4B542C4329F88D1E000A03AF /* AppWithTool */;
@@ -418,11 +449,6 @@
 			isa = PBXTargetDependency;
 			target = 4B542C4329F88D1E000A03AF /* AppWithTool */;
 			targetProxy = 4B542C6629F88D23000A03AF /* PBXContainerItemProxy */;
-		};
-		4B542CAC29F89320000A03AF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4B542C8629F88E6B000A03AF /* ToolX */;
-			targetProxy = 4B542CAB29F89320000A03AF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

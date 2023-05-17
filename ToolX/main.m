@@ -6,11 +6,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
+
+void report() {
+
+    printf("ToolX");
+
+}
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        // NSLog(@"argv[]=%s", *argv);
+        // printf("argc=%d", argc);
     }
+    printf("argc=%d", argc);
+    printf("argv[argc]=%s", argv[argc]);
+    report();
     return 0;
 }
