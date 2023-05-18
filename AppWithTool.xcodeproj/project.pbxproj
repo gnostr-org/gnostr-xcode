@@ -416,7 +416,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "rm -rf **.log\n\n## LOG=codesign.log\n## export LOG\n## echo -e $(date +%s):$SRCROOT > $SRCROOT/$LOG\n## echo -e \"\\n\" >> $SRCROOT/$LOG\n## codesign  --display --verbose=4  -d -vvv --entitlements :- $SRCROOT/Build/Products/Debug/AppWithTool.app >> $SRCROOT/$LOG\n\nhexdump -c $SRCROOT/Build/Products/Debug/AppWithTool.app/Contents/MacOS/AppWithTool > $SRCROOT/AppWithTool-hexdump.log\nhexdump -c $SRCROOT/Build/Products/Debug/AppWithTool.app/Contents/MacOS/ToolX > $SRCROOT/ToolX-hexdump.log\n##\n## open $SRCROOT/**.log\ntouch $SRCROOT/Build/Products/.gitkeep\ntouch $SRCROOT/Build/Products/Debug/.gitkeep\ngit add -f **.log\n##git commit -m \"$(date +%s)\" -m \"hexdump -c of AppWithTool and ToolX\" || echo\n";
+			shellScript = "rm -rf **.log\n\n## LOG=codesign.log\n## export LOG\n## echo -e $(date +%s):$SRCROOT > $SRCROOT/$LOG\n## echo -e \"\\n\" >> $SRCROOT/$LOG\n## codesign  --display --verbose=4  -d -vvv --entitlements :- $SRCROOT/Build/Products/Debug/AppWithTool.app >> $SRCROOT/$LOG\n\nhexdump -c $SRCROOT/Build/Products/Debug/AppWithTool.app/Contents/MacOS/AppWithTool > $SRCROOT/AppWithTool-hexdump.log\nhexdump -c $SRCROOT/Build/Products/Debug/AppWithTool.app/Contents/MacOS/ToolX > $SRCROOT/ToolX-hexdump.log\n##\n## open $SRCROOT/**.log\ntouch $SRCROOT/Build/Products/.gitkeep\ntouch $SRCROOT/Build/Products/Debug/.gitkeep\n## git add -f **.log\n## git commit -m \"$(date +%s)\" -m \"hexdump -c of AppWithTool and ToolX\" || echo\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
