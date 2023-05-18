@@ -3,7 +3,7 @@
    LastUpgradeVersion = "1240"
    version = "1.3">
    <BuildAction
-      parallelizeBuildables = "NO"
+      parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
@@ -52,21 +52,21 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "Schema:ToolX:Run:debug:arg1"
+            argument = "Schema:ToolX:Run:arg1"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "Schema:ToolX:Run:debug:arg2"
+            argument = "Schema:ToolX:Run:arg2"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "Schema:ToolX:Run:debug:arg3"
+            argument = "Schema:ToolX:Run:arg3"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
