@@ -20,20 +20,6 @@
                ReferencedContainer = "container:AppWithTool.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4B542C8629F88E6B000A03AF"
-               BuildableName = "ToolX"
-               BlueprintName = "ToolX"
-               ReferencedContainer = "container:AppWithTool.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
