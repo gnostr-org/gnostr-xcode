@@ -19,9 +19,9 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         // NSLog(@"argv[]=%s", *argv);
         // printf("argc=%d", argc);
-    }
     printf("argc=%d", argc);
     printf("argv[argc]=%s", argv[argc]);
     report();
+    }
     return 0;
 }
