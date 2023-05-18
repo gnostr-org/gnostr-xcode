@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
 #include "../AppWithTool/main.m"
+#include "../AppWithTool/execv_bridge.h"
 
 #define APPWITHTOOLS_TESTS TRUE
 
