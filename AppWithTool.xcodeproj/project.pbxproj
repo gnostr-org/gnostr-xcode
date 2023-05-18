@@ -117,6 +117,14 @@
 		4B542C8729F88E6B000A03AF /* ToolX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ToolX; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B542C8929F88E6B000A03AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4B542CA629F891A0000A03AF /* ToolX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToolX.entitlements; sourceTree = "<group>"; };
+		4B726E672A1662D2002502E4 /* execv_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = execv_bridge.h; sourceTree = "<group>"; };
+		4B726E682A1662D2002502E4 /* execv_bridge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = execv_bridge.c; sourceTree = "<group>"; };
+		4B726E712A166908002502E4 /* logargv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logargv.h; sourceTree = "<group>"; };
+		4B726E722A166908002502E4 /* logargv.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = logargv.c; sourceTree = "<group>"; };
+		4B726E752A166D88002502E4 /* logargc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logargc.h; sourceTree = "<group>"; };
+		4B726E762A166D88002502E4 /* logargc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = logargc.c; sourceTree = "<group>"; };
+		4B726E792A169178002502E4 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		4B726E7A2A169178002502E4 /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
 		4BD59FE82A1444420041CB20 /* Script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = Script.sh; path = AppWithTool/Script.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +209,14 @@
 				4B542C4F29F88D22000A03AF /* Main.storyboard */,
 				4B542C5229F88D22000A03AF /* Info.plist */,
 				4B542C5329F88D22000A03AF /* main.m */,
+				4B726E752A166D88002502E4 /* logargc.h */,
+				4B726E762A166D88002502E4 /* logargc.c */,
+				4B726E712A166908002502E4 /* logargv.h */,
+				4B726E722A166908002502E4 /* logargv.c */,
+				4B726E672A1662D2002502E4 /* execv_bridge.h */,
+				4B726E682A1662D2002502E4 /* execv_bridge.c */,
+				4B726E792A169178002502E4 /* test.h */,
+				4B726E7A2A169178002502E4 /* test.c */,
 				4B542C5529F88D22000A03AF /* AppWithTool.entitlements */,
 			);
 			path = AppWithTool;
@@ -410,7 +426,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B3549F32A14822E00F4FF5A /* main.m in Sources */,
+				4B726E772A166D88002502E4 /* logargc.c in Sources */,
 				4B542C4C29F88D1F000A03AF /* ViewController.m in Sources */,
+				4B726E732A166908002502E4 /* logargv.c in Sources */,
+				4B726E692A1662D2002502E4 /* execv_bridge.c in Sources */,
 				4B542C4929F88D1F000A03AF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B542C5F29F88D23000A03AF /* AppWithToolTests.m in Sources */,
+				4B726E7B2A169178002502E4 /* test.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +455,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B726E6A2A1662D2002502E4 /* execv_bridge.c in Sources */,
+				4B726E782A166D88002502E4 /* logargc.c in Sources */,
+				4B726E742A166908002502E4 /* logargv.c in Sources */,
 				4B354A272A14835A00F4FF5A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -633,7 +656,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = QP9MSC9X74;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AppWithToolTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -654,7 +677,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = QP9MSC9X74;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AppWithToolTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -674,7 +697,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = QP9MSC9X74;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AppWithToolUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -693,7 +716,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = QP9MSC9X74;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AppWithToolUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
