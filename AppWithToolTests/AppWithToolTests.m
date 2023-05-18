@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
 #include "../AppWithTool/main.m"
+#include "../AppWithTool/test.h"
 #include "../AppWithTool/execv_bridge.h"
 
 #define APPWITHTOOLS_TESTS TRUE
@@ -25,14 +26,14 @@
 #if APPWITHTOOLS_TESTS
     NSLog(@"\nAPPWITHTOOLS_TESTS=%d\n",APPWITHTOOLS_TESTS);
 #endif
-    //test();
+    test();
 
 }
 
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     printf("\nAppWithToolTests.m:tearDown\n");
-    //test();
+    test();
 
 }
 

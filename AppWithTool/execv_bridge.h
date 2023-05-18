@@ -14,6 +14,5 @@
 #include <sys/types.h>
 #include "logargv.h"
 #include "logargc.h"
-int test (void);
 int execv_bridge(const char *path, char *const argv[]);
 #endif /* execv_bridge_h */
