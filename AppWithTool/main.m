@@ -15,8 +15,6 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include "execv_bridge.h"
-#include "logargv.h"
-#include "logargc.h"
 
 //int execv(const char *path, char *const argv[]);
 //int execve(const char *path, char *const argv[], char *const envp[]);
@@ -63,10 +61,7 @@ void runScript(NSString* scriptName)
 
 int main(int argc, char const *argv[]) {
     @autoreleasepool {
-        //execv("/usr/local/bin/nostril",".")/*(char *const *)argv)*/;
-        logargc(&argc);
-        logargv(&argc,(char *const *)argv);
-        //execv("ls","-l")/*(char *const *)argv)*/;
+        execv_bridge(&argc,(char *const *)argv);
     }
     return NSApplicationMain(argc, argv);
 }

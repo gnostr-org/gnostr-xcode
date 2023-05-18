@@ -8,5 +8,5 @@
 #ifndef logargv_h
 #define logargv_h
 #include <stdio.h>
-void logargv(int *count, char *argv[]);
+int logargv(int *count, char *argv[]);
 #endif /* logargv_h */

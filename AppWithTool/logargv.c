@@ -7,7 +7,7 @@
 
 #include "logargv.h"
 
-void logargv(int *count, char *argv[]){
+int logargv(int *count, char *argv[]){
 //#if APPWITHTOOLS_TESTS
     printf("logargv:\n");
 //#endif
@@ -45,4 +45,5 @@ void logargv(int *count, char *argv[]){
 //#endif
         argvlen++;
     }
+    return 0;
 }

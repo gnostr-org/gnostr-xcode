@@ -12,7 +12,7 @@ int execv_bridge(const char *path, char *const argv[]){
     printf("execv_bridge:\n");
     printf("path:%s\n", path);
     printf("*argv:%s\n", *argv);
-    //execv(path, argv);
-    return execv(path, argv);
+    execv(path, argv);
+    return 0;//execv(path, argv);
     
 }
