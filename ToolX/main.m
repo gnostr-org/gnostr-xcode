@@ -10,7 +10,7 @@
 
 void report() {
 
-    printf("ToolX");
+    printf("ToolX\n");
 
 }
 
@@ -19,8 +19,8 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         // NSLog(@"argv[]=%s", *argv);
         // printf("argc=%d", argc);
-    printf("argc=%d", argc);
-    printf("argv[argc]=%s", argv[argc]);
+    printf("argc=%d\n", argc);
+    printf("argv[argc]=%s\n", argv[argc]);
     report();
     }
     return 0;
