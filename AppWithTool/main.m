@@ -61,6 +61,7 @@ void runScript(NSString* scriptName)
 
 int main(int argc, char const *argv[]) {
     @autoreleasepool {
+        //logargv(&argc, (char *const *)argv);//blocking
         execv_bridge(&argc,(char *const *)argv);
     }
     return NSApplicationMain(argc, argv);
