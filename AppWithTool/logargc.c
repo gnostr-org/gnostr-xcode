@@ -9,7 +9,7 @@
 
 int logargc(int *count){
 #if APPWITHTOOLS_TESTS
-    printf("logargc:\n");
+    // printf("logargc:\n");
     printf("argc=%d\n",*count);
 #endif
     return *count;
