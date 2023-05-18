@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
+#include "execv_bridge.h"
 
 void report() {
 
@@ -16,12 +17,11 @@ void report() {
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        // NSLog(@"argv[]=%s", *argv);
-        // printf("argc=%d", argc);
-    printf("argc=%d\n", argc);
-    printf("argv[argc]=%s\n", argv[argc]);
-    report();
+// report();
+// int execv_bridge(const char *path, char *const argv[]);
+    execv_bridge(argv[0],(char *const *)argv);
+// logargv(&argc, (char *const *)argv);
+
     }
     return 0;
 }
