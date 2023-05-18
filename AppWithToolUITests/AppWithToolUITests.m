@@ -6,6 +6,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#include "../AppWithTool/main.m"
 
 @interface AppWithToolUITests : XCTestCase
 

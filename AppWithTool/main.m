@@ -6,23 +6,36 @@
 //
 
 //REF: https://developer.apple.com/forums/thread/106590
+
+//main.h
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
 
-int execv(const char *path, char *const argv[]);
-int execve(const char *path, char *const argv[], char *const envp[]);
-int execvp(const char *file, char *const argv[]);
-int execvpe(const char *file, char *const argv[], char *const envp[]);
+//int execv(const char *path, char *const argv[]);
+//int execve(const char *path, char *const argv[], char *const envp[]);
+//int execvp(const char *file, char *const argv[]);
+//int execvpe(const char *file, char *const argv[], char *const envp[]);
+
 void runScript(NSString* scriptName);
-void logstuff(int *count);
-
-int execv(const char *path, char *const argv[]){
+void logsargc(int *count);
+void logargv(int *count, char *const argv[]);
+//main.h end
+int test (void);
+//#import main.h
+int execv_bridge(const char *path, char *const argv[]){
     
-    printf("execv:_____________________________\n");
-    //printf("=========%s", path);
-    printf("=========%c=======", *argv);
-    //execv("/usr/local/bin/nostril", &argv[argc]);
-    return 0; }
+    printf("execv_bridge:\n");
+    printf("path:%s\n", path);
+    printf("*argv:%s\n", *argv);
+    //execv(path, argv);
+    return execv(path, argv);
+    
+}
+
 int execve(const char *path, char *const argv[], char *const envp[]){ return 0; }
 int execvp(const char *file, char *const argv[]){ return 0; }
 int execvpe(const char *file, char *const argv[], char *const envp[]){ return 0; }
@@ -58,40 +71,60 @@ void runScript(NSString* scriptName)
 }
 //------------------------------------------------------
 
-void logargc(int *count){
+void logargc(int *count){ printf("argc=%d\n",*count); }
+void logargv(int *count, char *const argv[]){
     
-    printf("logargc argc = %d\n",*count);
+    int argvlen = 0;
+    while(argv[argvlen] != NULL){
+        // NOTE: argvlen++ increment postfix.
+        printf("argv[argvlen++] = %d\n", *argv[argvlen++]);
+    }
+    
+    argvlen = 0;
+    while(argv[argvlen] != NULL){
+        // NOTE: argvlen++ increment postfix.
+        // printf("Character: %c\n",*argv[argvlen]);
+        printf("\nCharacter: %d\n",*argv[argvlen]);
+        // printf("Character: %c\n",*argv[argvlen]);
+        printf("Signed octal: %o\n",*argv[argvlen]);
+        // printf("String of characters: %c\n",*argv[argvlen]);
+        printf("Unsigned hexadecimal integer: %x\n",*argv[argvlen]);
+        printf("Unsigned HEXADECIMAL integer: %X\n",*argv[argvlen]);
+        printf("Pointer address: %p\n",/***/argv[argvlen]);
+        printf("Signed decimal integer d: %d\n",*argv[argvlen]);
+        printf("Signed decimal integer i: %i\n\n",*argv[argvlen]);
+        argvlen++;
+    }
+}
+
+int test (void) {
+#ifdef APPWITHTOOLS_TESTS
+        NSLog(APPWITHTOOLS_TESTS);
+#endif
+
+//REF: https://stackoverflow.com/questions/4326684/how-to-create-a-process-on-mac-os-using-fork-and-exec
+    pid_t processId;
+    if ((processId = fork()) == 0) {
+        char app[] = "/bin/echo";
+        char command[] = "test:";
+        char * const argv[] = { app, command, "success", NULL };
+        if (execv_bridge(app, argv) < 0) {
+            perror("execv error");
+        }
+    } else if (processId < 0) {
+        perror("fork error");
+    } else {
+        return EXIT_SUCCESS;
+    }
+    return EXIT_FAILURE;
 }
 
 int main(int argc, char const *argv[]) {
     @autoreleasepool {
-        
-        logargc(&argc);
-        //printf("argc=%d", argc);
-        //printf("argv[argc]=%s", argv[argc]);
-        //NSLog(@"argc=%d", argc);
-        //NSLog(@"argv[argc-1]=%s", argv[argc-1]);
-        //NSLog(@"argv[argc-2]=%s", argv[argc-2]);
-        //NSLog(@"argv[argc-3]=%s", argv[argc-3]);
-        //NSLog(@"");
-        //NSLog(@"");
-        //NSLog(@"");
-        // Setup code that might create autoreleased objects goes here.
-        // runScript(@"Script.sh");
-        // printf("=========%s", &argv[argc]);
-        // execv("/usr/local/bin/nostril", "--sec");
-        
-        // int execv(const char *path, char *const argv[]){
-        //const char myarg = **argv;
-        //execv("/usr/local/bin/ls", myarg);
-        //execv("/usr/local/bin/ls", &*argv);
-        execv(&*argv[0], &*argv);
-
-        // runScript(@"Script.sh");
-        //runScript(@"template.sh");
-        //runScript(@"Script.sh");
-
-
+        //execv("/usr/local/bin/nostril",".")/*(char *const *)argv)*/;
+        //logargc(&argc);
+        //logargv(&argc,(char *const *)argv);
+        //execv("ls","-l")/*(char *const *)argv)*/;
     }
     return NSApplicationMain(argc, argv);
 }
