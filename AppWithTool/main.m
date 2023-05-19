@@ -65,9 +65,9 @@ int main(int argc, char const *argv[]) {
     @autoreleasepool {
         int *count=&argc;
         logargc(count);
-        argv[argc] = "test";//(int *)argc;
-        logargc(count);
-        logargc(&argc);
+        //argv[argc] = "test";//(int *)argc;
+        //logargc(count);
+        //logargc(&argc);
         //int success = logargv(&argc, (char **)argv);//blocking
         //if(success){printf("%d",success);};
         //execv_bridge(&argc,(char *const *)argv);
