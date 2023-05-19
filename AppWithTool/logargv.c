@@ -13,7 +13,7 @@ int logargv(int *count, char *argv[]){
     int i = *count;
     while(argv[argvlen] != NULL){
         while(argv[*count-i] != NULL){
-        // printf("i=%d\n",i);
+        printf("i=%d\n",i);
         printf("%s\n", argv[*count-i]);
         i--;
         }

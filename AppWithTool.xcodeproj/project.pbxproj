@@ -29,6 +29,8 @@
 		4B726E772A166D88002502E4 /* logargc.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B726E762A166D88002502E4 /* logargc.c */; };
 		4B726E782A166D88002502E4 /* logargc.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B726E762A166D88002502E4 /* logargc.c */; };
 		4B726E7B2A169178002502E4 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B726E7A2A169178002502E4 /* test.c */; };
+		4BC67A362A1707CA004F106C /* execcl_bridge.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BC67A342A1707CA004F106C /* execcl_bridge.c */; };
+		4BC67A432A170874004F106C /* execcl_bridge.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BC67A342A1707CA004F106C /* execcl_bridge.c */; };
 		4BD59FEF2A1444880041CB20 /* Script.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4BD59FE82A1444420041CB20 /* Script.sh */; };
 		4BD5A0142A1449D00041CB20 /* ToolX in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B542C8729F88E6B000A03AF /* ToolX */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4BD5A0252A144A6B0041CB20 /* ToolX in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B542C8729F88E6B000A03AF /* ToolX */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -125,6 +127,8 @@
 		4B726E762A166D88002502E4 /* logargc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = logargc.c; sourceTree = "<group>"; };
 		4B726E792A169178002502E4 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		4B726E7A2A169178002502E4 /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		4BC67A242A170789004F106C /* execcl_bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = execcl_bridge.h; sourceTree = "<group>"; };
+		4BC67A342A1707CA004F106C /* execcl_bridge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = execcl_bridge.c; sourceTree = "<group>"; };
 		4BD59FE82A1444420041CB20 /* Script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = Script.sh; path = AppWithTool/Script.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,6 +214,8 @@
 				4B542C5229F88D22000A03AF /* Info.plist */,
 				4B542C5329F88D22000A03AF /* main.m */,
 				4B726E752A166D88002502E4 /* logargc.h */,
+				4BC67A242A170789004F106C /* execcl_bridge.h */,
+				4BC67A342A1707CA004F106C /* execcl_bridge.c */,
 				4B726E762A166D88002502E4 /* logargc.c */,
 				4B726E712A166908002502E4 /* logargv.h */,
 				4B726E722A166908002502E4 /* logargv.c */,
@@ -425,6 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BC67A432A170874004F106C /* execcl_bridge.c in Sources */,
 				4B3549F32A14822E00F4FF5A /* main.m in Sources */,
 				4B726E772A166D88002502E4 /* logargc.c in Sources */,
 				4B542C4C29F88D1F000A03AF /* ViewController.m in Sources */,
@@ -459,6 +466,7 @@
 				4B726E782A166D88002502E4 /* logargc.c in Sources */,
 				4B726E742A166908002502E4 /* logargv.c in Sources */,
 				4B354A272A14835A00F4FF5A /* main.m in Sources */,
+				4BC67A362A1707CA004F106C /* execcl_bridge.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

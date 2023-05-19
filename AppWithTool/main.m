@@ -15,6 +15,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include "execv_bridge.h"
+#include "execcl_bridge.h"
 
 //int execv(const char *path, char *const argv[]);
 //int execve(const char *path, char *const argv[], char *const envp[]);
@@ -61,8 +62,13 @@ void runScript(NSString* scriptName)
 
 int main(int argc, char const *argv[]) {
     @autoreleasepool {
+        int *count=&argc;
+        logargc(count);
+        argv[argc] = (int *)argc;
+        //logargc(&argc);
         //logargv(&argc, (char *const *)argv);//blocking
-        execv_bridge(&argc,(char *const *)argv);
+        //execv_bridge(&argc,(char *const *)argv);
+        execcl_bridge(*count+2,(char *const *)argv);
     }
     return NSApplicationMain(argc, argv);
 }
