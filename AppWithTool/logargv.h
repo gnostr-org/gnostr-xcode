@@ -8,5 +8,6 @@
 #ifndef logargv_h
 #define logargv_h
 #include <stdio.h>
+#include "async.h"
 int logargv(int *count, char *argv[]);
 #endif /* logargv_h */

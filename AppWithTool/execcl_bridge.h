@@ -13,6 +13,7 @@
 #include <stdlib.h>
 #include <strings.h>
 #include <unistd.h>
+#include "async.h"
 
 int execcl_bridge(int argc, char* argv[]);
 

@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
 #include "execv_bridge.h"
+#include "async.h"
 
 void report() {
 

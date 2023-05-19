@@ -16,6 +16,7 @@
 #include <sys/types.h>
 #include "execv_bridge.h"
 #include "execcl_bridge.h"
+#include "async.h"
 
 //int execv(const char *path, char *const argv[]);
 //int execve(const char *path, char *const argv[], char *const envp[]);
@@ -64,11 +65,13 @@ int main(int argc, char const *argv[]) {
     @autoreleasepool {
         int *count=&argc;
         logargc(count);
-        argv[argc] = (int *)argc;
-        //logargc(&argc);
-        //logargv(&argc, (char *const *)argv);//blocking
+        argv[argc] = "test";//(int *)argc;
+        logargc(count);
+        logargc(&argc);
+        //int success = logargv(&argc, (char **)argv);//blocking
+        //if(success){printf("%d",success);};
         //execv_bridge(&argc,(char *const *)argv);
-        execcl_bridge(*count+2,(char *const *)argv);
+        //execcl_bridge(*count,(char *const *)argv);
     }
     return NSApplicationMain(argc, argv);
 }

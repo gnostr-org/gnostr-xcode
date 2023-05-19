@@ -15,5 +15,6 @@
 #include "execv_bridge.h"
 #include "logargv.h"
 #include "logargc.h"
+#include "async.h"
 int test (void);
 #endif /* test_h */
