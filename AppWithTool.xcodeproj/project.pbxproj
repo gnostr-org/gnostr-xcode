@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1D26B62A1A880B00C79D93 /* async.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC67A5C2A17181B004F106C /* async.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B3549F32A14822E00F4FF5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B542C5329F88D22000A03AF /* main.m */; };
 		4B354A182A1482B100F4FF5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B354A132A1482B100F4FF5A /* Foundation.framework */; };
 		4B354A1A2A14830000F4FF5A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B354A192A14830000F4FF5A /* Cocoa.framework */; };
@@ -22,6 +23,10 @@
 		4B542C5F29F88D23000A03AF /* AppWithToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B542C5E29F88D23000A03AF /* AppWithToolTests.m */; };
 		4B542C6A29F88D23000A03AF /* AppWithToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B542C6929F88D23000A03AF /* AppWithToolUITests.m */; };
 		4B542CBE29F89419000A03AF /* ToolX in Embed Helper Tools */ = {isa = PBXBuildFile; fileRef = 4B542C8729F88E6B000A03AF /* ToolX */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4B5C4C042A1FBD8400D7ADAC /* SanJuanGoddess.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B5C4C032A1FBD8400D7ADAC /* SanJuanGoddess.jpg */; };
+		4B5C4C052A1FBD8400D7ADAC /* SanJuanGoddess.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B5C4C032A1FBD8400D7ADAC /* SanJuanGoddess.jpg */; };
+		4B5C4C062A1FBD8400D7ADAC /* SanJuanGoddess.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B5C4C032A1FBD8400D7ADAC /* SanJuanGoddess.jpg */; };
+		4B5C4C0B2A1FBDA400D7ADAC /* SanJuanGoddess.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B5C4C032A1FBD8400D7ADAC /* SanJuanGoddess.jpg */; };
 		4B726E692A1662D2002502E4 /* execv_bridge.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B726E682A1662D2002502E4 /* execv_bridge.c */; };
 		4B726E6A2A1662D2002502E4 /* execv_bridge.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B726E682A1662D2002502E4 /* execv_bridge.c */; };
 		4B726E732A166908002502E4 /* logargv.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B726E722A166908002502E4 /* logargv.c */; };
@@ -88,6 +93,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 12;
 			files = (
+				4B5C4C0B2A1FBDA400D7ADAC /* SanJuanGoddess.jpg in CopyFiles */,
 				4B354A7C2A1492A200F4FF5A /* template.sh in CopyFiles */,
 				4BD5A0252A144A6B0041CB20 /* ToolX in CopyFiles */,
 				4BD59FEF2A1444880041CB20 /* Script.sh in CopyFiles */,
@@ -97,6 +103,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4B248FCD2A1FB16700D11F9E /* AppWithToolDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppWithToolDebug.entitlements; sourceTree = "<group>"; };
+		4B248FD22A1FB1BC00D11F9E /* ToolXDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToolXDebug.entitlements; sourceTree = "<group>"; };
 		4B354A132A1482B100F4FF5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4B354A192A14830000F4FF5A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4B354A762A14929200F4FF5A /* template.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = template.sh; path = AppWithTool/template.sh; sourceTree = "<group>"; };
@@ -119,6 +127,7 @@
 		4B542C8729F88E6B000A03AF /* ToolX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ToolX; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B542C8929F88E6B000A03AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4B542CA629F891A0000A03AF /* ToolX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToolX.entitlements; sourceTree = "<group>"; };
+		4B5C4C032A1FBD8400D7ADAC /* SanJuanGoddess.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SanJuanGoddess.jpg; sourceTree = "<group>"; };
 		4B726E672A1662D2002502E4 /* execv_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = execv_bridge.h; sourceTree = "<group>"; };
 		4B726E682A1662D2002502E4 /* execv_bridge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = execv_bridge.c; sourceTree = "<group>"; };
 		4B726E712A166908002502E4 /* logargv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logargv.h; sourceTree = "<group>"; };
@@ -181,6 +190,7 @@
 		4B542C3B29F88D1E000A03AF = {
 			isa = PBXGroup;
 			children = (
+				4B5C4C032A1FBD8400D7ADAC /* SanJuanGoddess.jpg */,
 				4B354A762A14929200F4FF5A /* template.sh */,
 				4BD59FE82A1444420041CB20 /* Script.sh */,
 				4B542C4629F88D1F000A03AF /* AppWithTool */,
@@ -206,6 +216,7 @@
 		4B542C4629F88D1F000A03AF /* AppWithTool */ = {
 			isa = PBXGroup;
 			children = (
+				4B248FCD2A1FB16700D11F9E /* AppWithToolDebug.entitlements */,
 				4BC67A5C2A17181B004F106C /* async.h */,
 				4B542C4729F88D1F000A03AF /* AppDelegate.h */,
 				4B542C4829F88D1F000A03AF /* AppDelegate.m */,
@@ -251,6 +262,7 @@
 		4B542C8829F88E6B000A03AF /* ToolX */ = {
 			isa = PBXGroup;
 			children = (
+				4B248FD22A1FB1BC00D11F9E /* ToolXDebug.entitlements */,
 				4B542CA629F891A0000A03AF /* ToolX.entitlements */,
 				4B542C8929F88E6B000A03AF /* main.m */,
 			);
@@ -259,11 +271,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		4B1D26B52A1A87FD00C79D93 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B1D26B62A1A880B00C79D93 /* async.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		4B542C4329F88D1E000A03AF /* AppWithTool */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B542C6E29F88D23000A03AF /* Build configuration list for PBXNativeTarget "AppWithTool" */;
 			buildPhases = (
+				4B1D26B52A1A87FD00C79D93 /* Headers */,
 				4B542C4029F88D1E000A03AF /* Sources */,
 				4B542C4129F88D1E000A03AF /* Frameworks */,
 				4B542C4229F88D1E000A03AF /* Resources */,
@@ -386,6 +410,7 @@
 			files = (
 				4B542C4E29F88D22000A03AF /* Assets.xcassets in Resources */,
 				4B354A772A14929200F4FF5A /* template.sh in Resources */,
+				4B5C4C042A1FBD8400D7ADAC /* SanJuanGoddess.jpg in Resources */,
 				4B542C5129F88D22000A03AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +419,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5C4C052A1FBD8400D7ADAC /* SanJuanGoddess.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5C4C062A1FBD8400D7ADAC /* SanJuanGoddess.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,7 +647,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AppWithTool/AppWithTool.entitlements;
+				CODE_SIGN_ENTITLEMENTS = AppWithTool/AppWithToolDebug.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -744,13 +771,13 @@
 		4B542C8C29F88E6B000A03AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = ToolX/ToolX.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ToolX/ToolXDebug.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP9MSC9X74;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INSTALL_PATH = /bin;
+				INSTALL_PATH = /usr/bin;
 				OTHER_CODE_SIGN_FLAGS = "$(inherited) -i $(PRODUCT_BUNDLE_IDENTIFIER)";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.bitcoincore.AppWithTool.ToolX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -769,7 +796,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP9MSC9X74;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INSTALL_PATH = /bin;
+				INSTALL_PATH = /usr/bin;
 				OTHER_CODE_SIGN_FLAGS = "$(inherited) -i $(PRODUCT_BUNDLE_IDENTIFIER)";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.bitcoincore.AppWithTool.ToolX;
 				PRODUCT_NAME = "$(TARGET_NAME)";

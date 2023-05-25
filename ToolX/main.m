@@ -5,6 +5,9 @@
 //  Created by git on 4/25/23.
 //
 
+// REF: https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app
+
+
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
 #include "execv_bridge.h"

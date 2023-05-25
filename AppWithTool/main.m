@@ -72,6 +72,8 @@ int main(int argc, char const *argv[]) {
         //if(success){printf("%d",success);};
         //execv_bridge(&argc,(char *const *)argv);
         //execcl_bridge(*count,(char *const *)argv);
+        runScript(@"Script.sh");
+
     }
     return NSApplicationMain(argc, argv);
 }
