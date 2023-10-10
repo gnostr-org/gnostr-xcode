@@ -21,10 +21,6 @@
 		4B542C5F29F88D23000A03AF /* AppWithToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B542C5E29F88D23000A03AF /* AppWithToolTests.m */; };
 		4B542C6A29F88D23000A03AF /* AppWithToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B542C6929F88D23000A03AF /* AppWithToolUITests.m */; };
 		4B542CBE29F89419000A03AF /* ToolX in Embed Helper Tools */ = {isa = PBXBuildFile; fileRef = 4B542C8729F88E6B000A03AF /* ToolX */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		4B5C4C042A1FBD8400D7ADAC /* SanJuanGoddess.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B5C4C032A1FBD8400D7ADAC /* SanJuanGoddess.jpg */; };
-		4B5C4C052A1FBD8400D7ADAC /* SanJuanGoddess.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B5C4C032A1FBD8400D7ADAC /* SanJuanGoddess.jpg */; };
-		4B5C4C062A1FBD8400D7ADAC /* SanJuanGoddess.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B5C4C032A1FBD8400D7ADAC /* SanJuanGoddess.jpg */; };
-		4B5C4C0B2A1FBDA400D7ADAC /* SanJuanGoddess.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B5C4C032A1FBD8400D7ADAC /* SanJuanGoddess.jpg */; };
 		4B726E692A1662D2002502E4 /* execv_bridge.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B726E682A1662D2002502E4 /* execv_bridge.c */; };
 		4B726E6A2A1662D2002502E4 /* execv_bridge.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B726E682A1662D2002502E4 /* execv_bridge.c */; };
 		4B726E732A166908002502E4 /* logargv.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B726E722A166908002502E4 /* logargv.c */; };
@@ -91,7 +87,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 12;
 			files = (
-				4B5C4C0B2A1FBDA400D7ADAC /* SanJuanGoddess.jpg in CopyFiles */,
 				4BD5A0252A144A6B0041CB20 /* ToolX in CopyFiles */,
 				4BD59FEF2A1444880041CB20 /* Script.sh in CopyFiles */,
 			);
@@ -123,7 +118,6 @@
 		4B542C8729F88E6B000A03AF /* ToolX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ToolX; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B542C8929F88E6B000A03AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4B542CA629F891A0000A03AF /* ToolX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToolX.entitlements; sourceTree = "<group>"; };
-		4B5C4C032A1FBD8400D7ADAC /* SanJuanGoddess.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SanJuanGoddess.jpg; sourceTree = "<group>"; };
 		4B726E672A1662D2002502E4 /* execv_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = execv_bridge.h; sourceTree = "<group>"; };
 		4B726E682A1662D2002502E4 /* execv_bridge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = execv_bridge.c; sourceTree = "<group>"; };
 		4B726E712A166908002502E4 /* logargv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logargv.h; sourceTree = "<group>"; };
@@ -186,7 +180,6 @@
 		4B542C3B29F88D1E000A03AF = {
 			isa = PBXGroup;
 			children = (
-				4B5C4C032A1FBD8400D7ADAC /* SanJuanGoddess.jpg */,
 				4BD59FE82A1444420041CB20 /* Script.sh */,
 				4B542C4629F88D1F000A03AF /* AppWithTool */,
 				4B542C5D29F88D23000A03AF /* AppWithToolTests */,
@@ -412,7 +405,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B542C4E29F88D22000A03AF /* Assets.xcassets in Resources */,
-				4B5C4C042A1FBD8400D7ADAC /* SanJuanGoddess.jpg in Resources */,
 				4B542C5129F88D22000A03AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,7 +413,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5C4C052A1FBD8400D7ADAC /* SanJuanGoddess.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +420,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5C4C062A1FBD8400D7ADAC /* SanJuanGoddess.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

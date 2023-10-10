@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:gnostr-xcode.xcworkspace">
-   </FileRef>
    <Group
       location = "group:"
-      name = "">
+      name = "gnostr-xcode.xcworkspace">
       <Group
          location = "group:AppWithTool"
          name = "AppWithTool">
@@ -96,9 +93,6 @@
             location = "group:ViewController.m">
          </FileRef>
       </Group>
-      <FileRef
-         location = "group:AppWithTool-hexdump.log">
-      </FileRef>
       <FileRef
          location = "group:AppWithTool.xcodeproj">
       </FileRef>
