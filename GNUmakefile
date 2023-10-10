@@ -159,9 +159,12 @@ PRIVATE_ALLSPHINXOPTS = -d $(PRIVATE_BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(S
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 
--:
+default:
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?##/ {printf "\033[36m%-15s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
+.PHONY:ToolX
+ToolX:## 	
+	$(MAKE) -C ToolX all
 help:## 	verbose help
 	@echo verbose $@
 	@sed -n 's/^##//p' ${MAKEFILE_LIST} | column -t -s ':' |  sed -e 's/^/ /'
@@ -205,83 +208,6 @@ else
 endif
 
 submodules: checkbrew## 	submodules
-	@git submodule init -- firmware && git submodule update -- firmware
 	@git submodule update --init --recursive
 #	@git submodule foreach --recursive "git submodule update --init --recursive"
 
-.PHONY: nvm
-.ONESHELL:
-nvm: ## 	nvm
-	@curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash || git pull -C $(HOME)/.nvm && export NVM_DIR="$(HOME)/.nvm" && [ -s "$(NVM_DIR)/nvm.sh" ] && \. "$(NVM_DIR)/nvm.sh" && [ -s "$(NVM_DIR)/bash_completion" ] && \. "$(NVM_DIR)/bash_completion"  && nvm install $(NODE_VERSION) && nvm use $(NODE_VERSION)
-	@source ~/.bashrc && nvm alias $(NODE_ALIAS) $(NODE_VERSION)
-
-tag:## 	
-	@git tag $(OS)-$(OS_VERSION)-$(ARCH)-$(shell date +%s)
-	@git push -f --tags
-
-clean-nvm: ## 	clean-nvm
-	@rm -rf ~/.nvm
-
-.PHONY: serve
-.ONESHELL:
-serve:## 	serve
-	bash -c "$(PYTHON3) -m http.server $(PORT) -d . &"
-
-#######################
-.ONESHELL:
-docker-start:## 	start docker
-	test -d .venv || $(PYTHON3) -m virtualenv .venv
-	( \
-	   source .venv/bin/activate; pip install -q -r requirements.txt; \
-	   python3 -m pip install -q omegaconf \
-	   pip install -q --upgrade pip; \
-	);
-	( \
-	    while ! docker system info > /dev/null 2>&1; do\
-	    echo 'Waiting for docker to start...';\
-	    if [[ '$(OS)' == 'Linux' ]]; then\
-	     systemctl restart docker.service;\
-	    fi;\
-	    if [[ '$(OS)' == 'Darwin' ]]; then\
-	     open --background -a /./Applications/Docker.app/Contents/MacOS/Docker;\
-	    fi;\
-	sleep 1;\
-	done\
-	)
-
-docker-install:## 	Download Docker.amd64.93002.dmg for MacOS Intel Compatibility
-
-	@[[ '$(shell uname -s)' == 'Darwin' ]] && echo "is Darwin" || echo "not Darwin";
-	@[[ '$(shell uname -m)' == 'x86_64' ]] && echo "is x86_64" || echo "not x86_64";
-	@[[ '$(shell uname -p)' == 'i386' ]]   && echo "is i386" || echo "not i386";
-	@[[ '$(shell uname -s)' == 'Darwin' ]] && [[ '$(shell uname -m)' == 'x86_64' ]]   && echo "is Darwin AND x86_64"     || echo "not Darwin AND x86_64";
-	@[[ '$(shell uname -s)' == 'Darwin' ]] && [[ ! '$(shell uname -m)' == 'x86_64' ]] && echo "is Darwin AND NOT x86_64" || echo "is NOT (Darwin AND NOT x86_64)";
-
-	#@[[ '$(shell uname -s)' != 'Darwin' ]] && echo "not Darwin" || echo "is Darwin";
-	#@[[ '$(shell uname -m)' != 'x86_64' ]] && echo "not x86_64" || echo "is x86_64";
-	#@[[ '$(shell uname -p)' != 'i386' ]]   && echo "not i386" || echo "is i386";
-
-	@[[ '$(shell uname -s)' == 'Darwin'* ]] && sudo -S chown -R $(shell whoami):admin /Users/$(shell whoami)/.docker/buildx/current || echo
-	@[[ '$(shell uname -s)' == 'Darwin'* ]] && echo "Install Docker.amd64.93002.dmg if MacOS Catalina - known compatible version!"
-	@[[ '$(shell uname -s)' == 'Darwin'* ]] && curl -o Docker.amd64.93002.dmg -C - https://desktop.docker.com/mac/main/amd64/93002/Docker.dmg
-	@[[ '$(shell uname -s)' == 'Darwin'* ]] && echo "Using: $(shell type -P openssl)"
-	@[[ '$(shell uname -s)' == 'Darwin'* ]] && openssl dgst -sha256 -r Docker.amd64.93002.dmg | sed 's/*Docker.amd64.93002.dmg//'
-	@[[ '$(shell uname -s)' == 'Darwin'* ]] && echo "Using: $(shell type -P sha256sum)"
-	@[[ '$(shell uname -s)' == 'Darwin'* ]] && sha256sum               Docker.amd64.93002.dmg | sed 's/Docker.amd64.93002.dmg//'
-	@[[ '$(shell uname -s)' == 'Darwin'* ]] && echo "Expected hash:"
-	@[[ '$(shell uname -s)' == 'Darwin'* ]] && echo "bee41d646916e579b16b7fae014e2fb5e5e7b5dbaf7c1949821fd311d3ce430b"
-	@[[ '$(shell uname -s)' == 'Darwin'* ]] && type -P open 2>/dev/null && open Docker.amd64.93002.dmg
-
-.PHONY: failure
-failure:
-	@-/usr/bin/false && ([ $$? -eq 0 ] && echo "success!") || echo "failure!"
-.PHONY: success
-success:
-	@-/usr/bin/true && ([ $$? -eq 0 ] && echo "success!") || echo "failure!"
-
--include venv.3.11.mk
--include venv.3.10.mk
--include venv.3.8.mk
--include venv.3.7.mk
--include nostril.mk
--include act.mk
