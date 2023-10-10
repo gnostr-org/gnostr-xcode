@@ -39,59 +39,6 @@
             <FileRef
                location = "group:async.h">
             </FileRef>
-            <Group
-               location = "group:build"
-               name = "build">
-               <FileRef
-                  location = "group:example">
-               </FileRef>
-               <FileRef
-                  location = "group:example-buffer.o">
-               </FileRef>
-               <FileRef
-                  location = "group:example-codelock.o">
-               </FileRef>
-               <FileRef
-                  location = "group:example-small.o">
-               </FileRef>
-               <FileRef
-                  location = "group:main.o">
-               </FileRef>
-            </Group>
-            <FileRef
-               location = "group:example-buffer.c">
-            </FileRef>
-            <FileRef
-               location = "group:example-codelock.c">
-            </FileRef>
-            <FileRef
-               location = "group:example-small.c">
-            </FileRef>
-            <FileRef
-               location = "group:examples.h">
-            </FileRef>
-            <FileRef
-               location = "group:main.c">
-            </FileRef>
-            <FileRef
-               location = "group:Makefile">
-            </FileRef>
-         </Group>
-         <FileRef
-            location = "group:LICENSE">
-         </FileRef>
-         <FileRef
-            location = "group:README.md">
-         </FileRef>
-         <Group
-            location = "group:win"
-            name = "win">
-            <FileRef
-               location = "group:async.sln">
-            </FileRef>
-            <FileRef
-               location = "group:async.vcxproj">
-            </FileRef>
          </Group>
       </Group>
       <Group
