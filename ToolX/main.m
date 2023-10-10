@@ -23,17 +23,23 @@ void report() {
 
 int main(int argc, char *argv[]) {
 
-    @autoreleasepool {
-        report();
-        /// int logargv(int *count, char *argv[]);
-        /// logargv(&argc, (char **)argv);
+@autoreleasepool {
+
+    report();
+
+/// int logargv(int *count, char *argv[]);
+/// logargv(&argc, (char **)argv);
 
 /// int execv_bridge(const char *path, char *const argv[]);
-        //execv_bridge((const char *)argv, (char *const *)argv);
-/// int execcl_bridge(int argc, char* argv[]);
-        execcl_bridge(argc, (char **)argv);
 
+/// argv[0]:/.../...AppWithTool/Build/Products/Debug/ToolX
+    execv_bridge((const char *)argv, (char *const *)argv);
+
+/// int execcl_bridge(int argc, char* argv[]);
+      //execcl_bridge(argc, (char **)argv);
 
     }
+
     return 0;
+
 }
