@@ -267,6 +267,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4B0802A72AD5FFB0005F3F2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B1D26B52A1A87FD00C79D93 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +347,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B542C8B29F88E6B000A03AF /* Build configuration list for PBXNativeTarget "ToolX" */;
 			buildPhases = (
+				4B0802A72AD5FFB0005F3F2A /* Headers */,
 				4B542C8329F88E6B000A03AF /* Sources */,
 				4B542C8429F88E6B000A03AF /* Frameworks */,
 				4B542C8529F88E6B000A03AF /* CopyFiles */,
@@ -772,6 +780,10 @@
 				DEVELOPMENT_TEAM = QP9MSC9X74;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ToolX/ext/secp256k1/src",
+				);
 				OTHER_CODE_SIGN_FLAGS = "$(inherited) -i $(PRODUCT_BUNDLE_IDENTIFIER)";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.bitcoincore.AppWithTool.ToolX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -791,6 +803,10 @@
 				DEVELOPMENT_TEAM = QP9MSC9X74;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ToolX/ext/secp256k1/src",
+				);
 				OTHER_CODE_SIGN_FLAGS = "$(inherited) -i $(PRODUCT_BUNDLE_IDENTIFIER)";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.bitcoincore.AppWithTool.ToolX;
 				PRODUCT_NAME = "$(TARGET_NAME)";

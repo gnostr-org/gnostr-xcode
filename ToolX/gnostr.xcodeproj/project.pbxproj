@@ -1,0 +1,1892 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		9F9D7CE5D87548189E85E920 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0BDABEE385064F77BD366240 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				ACFB01EDBA6216213BB3E968 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		A53D8D397489416585A76ECC /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 71173964D62E45129281D908 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				82E9D69CA2BD17846B786588 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				CD6799486D054A8D8D4033C8 /* PBXTargetDependency */,
+				241A93400F01437195C3F2B2 /* PBXTargetDependency */,
+				FF999BFB9B7E44C5ABB7C4B6 /* PBXTargetDependency */,
+				8E45CBFBD71442E48D6DB58A /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0C6F3385406E40E28667F909 /* precomputed_ecmult_gen.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE0172860B14D03A3EBFED9 /* precomputed_ecmult_gen.c */; };
+		39F4D617B97D4CEEB4890DDB /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = EDC19C0586EB43A0B69CC949 /* aes.c */; };
+		4A1A03FE0A17434AB72FAEE3 /* configurator.c in Sources */ = {isa = PBXBuildFile; fileRef = 84E917350B9B47E8B54A3D8F /* configurator.c */; };
+		76E04B84884B40DD84467C28 /* gnostr.c in Sources */ = {isa = PBXBuildFile; fileRef = FBC99C520787426C9D39C10F /* gnostr.c */; };
+		8AD99F89DC9843D8BEAB6C2D /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 33DD7F1CFDF54E44A1BF82F8 /* sha256.c */; };
+		8EFB34DB2DA44A9FAAD0F979 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 0BA2020F6CF142D0BCD4B46A /* base64.c */; };
+		B1126CFF6B274503994C136F /* precomputed_ecmult.c in Sources */ = {isa = PBXBuildFile; fileRef = 9971AC7EB9AA406292E1EFFC /* precomputed_ecmult.c */; };
+		D520BBA6E68E414DABBC14EE /* secp256k1.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AF5F7D95FF241559124343A /* secp256k1.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EE143D2CA2E4CBCAB639135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8155BEFC4EDD4EE3B3FEAC2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D78A9916BEE04BD6A83A9958;
+			remoteInfo = gnostr;
+		};
+		455217F315DB4E7EBC5860AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8155BEFC4EDD4EE3B3FEAC2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F9D7CE5D87548189E85E920;
+			remoteInfo = ZERO_CHECK;
+		};
+		860DC5FCE53945B0A2AF4C76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8155BEFC4EDD4EE3B3FEAC2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C7DFF3BBAF47FA861BD9AF;
+			remoteInfo = secp256k1;
+		};
+		B28BF74A0B3F4A4AB45C435F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8155BEFC4EDD4EE3B3FEAC2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F9D7CE5D87548189E85E920;
+			remoteInfo = ZERO_CHECK;
+		};
+		E195A9FBE2FA421F8DA94366 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8155BEFC4EDD4EE3B3FEAC2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E089D2C1220474DA0FD3F0D;
+			remoteInfo = configurator;
+		};
+		E908D9E0D4C4467093E8E3B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8155BEFC4EDD4EE3B3FEAC2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629CDA0B425945EBB5136893;
+			remoteInfo = secp256k1_precomputed;
+		};
+		EE296572DB5145C48144444A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8155BEFC4EDD4EE3B3FEAC2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F9D7CE5D87548189E85E920;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BA2020F6CF142D0BCD4B46A /* base64.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = base64.c; sourceTree = SOURCE_ROOT; };
+		0D5073D5C9EE4249BFB6F0E1 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ext/secp256k1/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3049613B6AFE4E21AC719941 /* libsecp256k1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libsecp256k1.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		31BFAAEFB48D4D6E84F6C212 /* gnostr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = gnostr; sourceTree = BUILT_PRODUCTS_DIR; };
+		33DD7F1CFDF54E44A1BF82F8 /* sha256.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = sha256.c; sourceTree = SOURCE_ROOT; };
+		3AF5F7D95FF241559124343A /* secp256k1.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = secp256k1.c; path = ext/secp256k1/src/secp256k1.c; sourceTree = SOURCE_ROOT; };
+		567811A9F1EB4CAAB21D8394 /* libsecp256k1_precomputed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libsecp256k1_precomputed.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AD8005BD6204DDE9D93FBAE /* endian.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = endian.h; sourceTree = SOURCE_ROOT; };
+		64FB90EC7E35410B993D8A22 /* hex.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = hex.h; sourceTree = SOURCE_ROOT; };
+		79ADDC13F3F94BA0BE9504B8 /* random.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = random.h; sourceTree = SOURCE_ROOT; };
+		84E917350B9B47E8B54A3D8F /* configurator.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = configurator.c; sourceTree = SOURCE_ROOT; };
+		94FC916707204FB3BEEE7338 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ext/secp256k1/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9971AC7EB9AA406292E1EFFC /* precomputed_ecmult.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = precomputed_ecmult.c; path = ext/secp256k1/src/precomputed_ecmult.c; sourceTree = SOURCE_ROOT; };
+		9A893000F46247DE9ABF9127 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A392FEB6CA38428E81A1DA26 /* configurator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = configurator; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0CFFF605AF24963B5AD2CA2 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B3521DF0C7E04C23BDF3AF22 /* proof.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = proof.h; sourceTree = SOURCE_ROOT; };
+		BACA53A9A7EB41FC8F325969 /* sha256.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = sha256.h; sourceTree = SOURCE_ROOT; };
+		CEE0172860B14D03A3EBFED9 /* precomputed_ecmult_gen.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = precomputed_ecmult_gen.c; path = ext/secp256k1/src/precomputed_ecmult_gen.c; sourceTree = SOURCE_ROOT; };
+		DA33815BD7DA424F9D6F0F34 /* cursor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = cursor.h; sourceTree = SOURCE_ROOT; };
+		E57063301C604C8C95A89293 /* base64.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = base64.h; sourceTree = SOURCE_ROOT; };
+		EDC19C0586EB43A0B69CC949 /* aes.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = aes.c; sourceTree = SOURCE_ROOT; };
+		EE4C6F24850F401080161BE2 /* aes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = aes.h; sourceTree = SOURCE_ROOT; };
+		FBC99C520787426C9D39C10F /* gnostr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = gnostr.c; sourceTree = SOURCE_ROOT; };
+		FD81DA81D0D2447B8AD96359 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		095BB7D599A04F638A13B588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A7114711EBF476E832CA89D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9293D3F51349C8B419D555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7ED96F03412484BA95B7C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B6167C55F68441886CE5FDB /* gnostr */ = {
+			isa = PBXGroup;
+			children = (
+				CDE4BCFFCBCA4BF993E6CDF2 /* Header Files */,
+				325BB25C0E3D4078A291495B /* Source Files */,
+				9A893000F46247DE9ABF9127 /* CMakeLists.txt */,
+			);
+			name = gnostr;
+			sourceTree = "<group>";
+		};
+		325BB25C0E3D4078A291495B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDC19C0586EB43A0B69CC949 /* aes.c */,
+				0BA2020F6CF142D0BCD4B46A /* base64.c */,
+				FBC99C520787426C9D39C10F /* gnostr.c */,
+				33DD7F1CFDF54E44A1BF82F8 /* sha256.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		36B67531225348E4BB56DB56 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9971AC7EB9AA406292E1EFFC /* precomputed_ecmult.c */,
+				CEE0172860B14D03A3EBFED9 /* precomputed_ecmult_gen.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		4493761CCCF24B86B2632A99 /* secp256k1 */ = {
+			isa = PBXGroup;
+			children = (
+				5908BEE55B524E828582E71B /* Source Files */,
+				0D5073D5C9EE4249BFB6F0E1 /* CMakeLists.txt */,
+			);
+			name = secp256k1;
+			sourceTree = "<group>";
+		};
+		5908BEE55B524E828582E71B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AF5F7D95FF241559124343A /* secp256k1.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		9C2E483663A74D4F98DFEF5A /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				B62789EF57CB4BDAA101D2F3 /* CMake Rules */,
+				FD81DA81D0D2447B8AD96359 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		B62789EF57CB4BDAA101D2F3 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C18665460B9E44A58EF96DA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1FC529CDB374CD4A4BB11C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A392FEB6CA38428E81A1DA26 /* configurator */,
+				31BFAAEFB48D4D6E84F6C212 /* gnostr */,
+				3049613B6AFE4E21AC719941 /* libsecp256k1.a */,
+				567811A9F1EB4CAAB21D8394 /* libsecp256k1_precomputed.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBDFEA1ADAF643E190378250 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				84E917350B9B47E8B54A3D8F /* configurator.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		CDE4BCFFCBCA4BF993E6CDF2 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE4C6F24850F401080161BE2 /* aes.h */,
+				E57063301C604C8C95A89293 /* base64.h */,
+				DA33815BD7DA424F9D6F0F34 /* cursor.h */,
+				5AD8005BD6204DDE9D93FBAE /* endian.h */,
+				64FB90EC7E35410B993D8A22 /* hex.h */,
+				B3521DF0C7E04C23BDF3AF22 /* proof.h */,
+				79ADDC13F3F94BA0BE9504B8 /* random.h */,
+				BACA53A9A7EB41FC8F325969 /* sha256.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		DD99A9E1701340B9B742F271 /* configurator */ = {
+			isa = PBXGroup;
+			children = (
+				CBDFEA1ADAF643E190378250 /* Source Files */,
+				B0CFFF605AF24963B5AD2CA2 /* CMakeLists.txt */,
+			);
+			name = configurator;
+			sourceTree = "<group>";
+		};
+		E03B72FC731741BCACB778A0 = {
+			isa = PBXGroup;
+			children = (
+				DD99A9E1701340B9B742F271 /* configurator */,
+				0B6167C55F68441886CE5FDB /* gnostr */,
+				9C2E483663A74D4F98DFEF5A /* ALL_BUILD */,
+				E995989177264DD191A50D47 /* secp256k1_precomputed */,
+				4493761CCCF24B86B2632A99 /* secp256k1 */,
+				C1FC529CDB374CD4A4BB11C3 /* Products */,
+				C18665460B9E44A58EF96DA8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E995989177264DD191A50D47 /* secp256k1_precomputed */ = {
+			isa = PBXGroup;
+			children = (
+				36B67531225348E4BB56DB56 /* Source Files */,
+				94FC916707204FB3BEEE7338 /* CMakeLists.txt */,
+			);
+			name = secp256k1_precomputed;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E089D2C1220474DA0FD3F0D /* configurator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B252966BC3A4A9B863F37DA /* Build configuration list for PBXNativeTarget "configurator" */;
+			buildPhases = (
+				42A45069F1264F85B18CC029 /* Sources */,
+				095BB7D599A04F638A13B588 /* Frameworks */,
+				75ECD383AABF585C4A28831A /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04B9E7E5841E49008AA59DB2 /* PBXTargetDependency */,
+			);
+			name = configurator;
+			productName = configurator;
+			productReference = A392FEB6CA38428E81A1DA26 /* configurator */;
+			productType = "com.apple.product-type.tool";
+		};
+		629CDA0B425945EBB5136893 /* secp256k1_precomputed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 985FA0DB9E8A4B28AC43DFA6 /* Build configuration list for PBXNativeTarget "secp256k1_precomputed" */;
+			buildPhases = (
+				565774039C144D67919D583A /* Sources */,
+				3A7114711EBF476E832CA89D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = secp256k1_precomputed;
+			productName = secp256k1_precomputed;
+			productReference = 567811A9F1EB4CAAB21D8394 /* libsecp256k1_precomputed.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		84C7DFF3BBAF47FA861BD9AF /* secp256k1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6673543BBEFD40019A153986 /* Build configuration list for PBXNativeTarget "secp256k1" */;
+			buildPhases = (
+				D8E9361D14A144698AFCF062 /* Sources */,
+				D7ED96F03412484BA95B7C09 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57939C8719E846D1AB78577D /* PBXTargetDependency */,
+			);
+			name = secp256k1;
+			productName = secp256k1;
+			productReference = 3049613B6AFE4E21AC719941 /* libsecp256k1.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D78A9916BEE04BD6A83A9958 /* gnostr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BE62A8EECF94F7096D198CA /* Build configuration list for PBXNativeTarget "gnostr" */;
+			buildPhases = (
+				47DCD9F2F5644D51A34421CE /* Sources */,
+				9F9293D3F51349C8B419D555 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92BBBA79AB434487AF39AEC4 /* PBXTargetDependency */,
+			);
+			name = gnostr;
+			productName = gnostr;
+			productReference = 31BFAAEFB48D4D6E84F6C212 /* gnostr */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8155BEFC4EDD4EE3B3FEAC2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = EEE19072A8FD415E9ED6E611 /* Build configuration list for PBXProject "gnostr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E03B72FC731741BCACB778A0;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A53D8D397489416585A76ECC /* ALL_BUILD */,
+				9F9D7CE5D87548189E85E920 /* ZERO_CHECK */,
+				1E089D2C1220474DA0FD3F0D /* configurator */,
+				D78A9916BEE04BD6A83A9958 /* gnostr */,
+				84C7DFF3BBAF47FA861BD9AF /* secp256k1 */,
+				629CDA0B425945EBB5136893 /* secp256k1_precomputed */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75ECD383AABF585C4A28831A /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Volumes/git/gnostr-xcode/ToolX\n  /Volumes/git/gnostr-xcode/ToolX/RelWithDebInfo/configurator > config.h\n  /Applications/CMake.app/Contents/bin/cmake -E copy /Volumes/git/gnostr-xcode/ToolX/config.h /Volumes/git/gnostr-xcode/ToolX\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Volumes/git/gnostr-xcode/ToolX\n  /Volumes/git/gnostr-xcode/ToolX/Release/configurator > config.h\n  /Applications/CMake.app/Contents/bin/cmake -E copy /Volumes/git/gnostr-xcode/ToolX/config.h /Volumes/git/gnostr-xcode/ToolX\nfi\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Volumes/git/gnostr-xcode/ToolX\n  /Volumes/git/gnostr-xcode/ToolX/Debug/configurator > config.h\n  /Applications/CMake.app/Contents/bin/cmake -E copy /Volumes/git/gnostr-xcode/ToolX/config.h /Volumes/git/gnostr-xcode/ToolX\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Volumes/git/gnostr-xcode/ToolX\n  /Volumes/git/gnostr-xcode/ToolX/MinSizeRel/configurator > config.h\n  /Applications/CMake.app/Contents/bin/cmake -E copy /Volumes/git/gnostr-xcode/ToolX/config.h /Volumes/git/gnostr-xcode/ToolX\nfi\nif test \"$CONFIGURATION\" = \"Coverage\"; then :\n  cd /Volumes/git/gnostr-xcode/ToolX\n  /Volumes/git/gnostr-xcode/ToolX/Coverage/configurator > config.h\n  /Applications/CMake.app/Contents/bin/cmake -E copy /Volumes/git/gnostr-xcode/ToolX/config.h /Volumes/git/gnostr-xcode/ToolX\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		82E9D69CA2BD17846B786588 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				"/Volumes/git/gnostr-xcode/ToolX/CMakeFiles/ALL_BUILD",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Volumes/git/gnostr-xcode/ToolX\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Volumes/git/gnostr-xcode/ToolX\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Volumes/git/gnostr-xcode/ToolX\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Volumes/git/gnostr-xcode/ToolX\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Coverage\"; then :\n  cd /Volumes/git/gnostr-xcode/ToolX\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ACFB01EDBA6216213BB3E968 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				"/Volumes/git/gnostr-xcode/ToolX/CMakeFiles/ZERO_CHECK",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Volumes/git/gnostr-xcode/ToolX\n  make -f /Volumes/git/gnostr-xcode/ToolX/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Volumes/git/gnostr-xcode/ToolX\n  make -f /Volumes/git/gnostr-xcode/ToolX/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Volumes/git/gnostr-xcode/ToolX\n  make -f /Volumes/git/gnostr-xcode/ToolX/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Volumes/git/gnostr-xcode/ToolX\n  make -f /Volumes/git/gnostr-xcode/ToolX/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Coverage\"; then :\n  cd /Volumes/git/gnostr-xcode/ToolX\n  make -f /Volumes/git/gnostr-xcode/ToolX/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42A45069F1264F85B18CC029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A1A03FE0A17434AB72FAEE3 /* configurator.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47DCD9F2F5644D51A34421CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F4D617B97D4CEEB4890DDB /* aes.c in Sources */,
+				8EFB34DB2DA44A9FAAD0F979 /* base64.c in Sources */,
+				76E04B84884B40DD84467C28 /* gnostr.c in Sources */,
+				8AD99F89DC9843D8BEAB6C2D /* sha256.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565774039C144D67919D583A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1126CFF6B274503994C136F /* precomputed_ecmult.c in Sources */,
+				0C6F3385406E40E28667F909 /* precomputed_ecmult_gen.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E9361D14A144698AFCF062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D520BBA6E68E414DABBC14EE /* secp256k1.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04B9E7E5841E49008AA59DB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F9D7CE5D87548189E85E920 /* ZERO_CHECK */;
+			targetProxy = EE296572DB5145C48144444A /* PBXContainerItemProxy */;
+		};
+		241A93400F01437195C3F2B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F9D7CE5D87548189E85E920 /* ZERO_CHECK */;
+			targetProxy = 455217F315DB4E7EBC5860AF /* PBXContainerItemProxy */;
+		};
+		57939C8719E846D1AB78577D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629CDA0B425945EBB5136893 /* secp256k1_precomputed */;
+			targetProxy = E908D9E0D4C4467093E8E3B3 /* PBXContainerItemProxy */;
+		};
+		8E45CBFBD71442E48D6DB58A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84C7DFF3BBAF47FA861BD9AF /* secp256k1 */;
+			targetProxy = 860DC5FCE53945B0A2AF4C76 /* PBXContainerItemProxy */;
+		};
+		92BBBA79AB434487AF39AEC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F9D7CE5D87548189E85E920 /* ZERO_CHECK */;
+			targetProxy = B28BF74A0B3F4A4AB45C435F /* PBXContainerItemProxy */;
+		};
+		CD6799486D054A8D8D4033C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E089D2C1220474DA0FD3F0D /* configurator */;
+			targetProxy = E195A9FBE2FA421F8DA94366 /* PBXContainerItemProxy */;
+		};
+		FF999BFB9B7E44C5ABB7C4B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D78A9916BEE04BD6A83A9958 /* gnostr */;
+			targetProxy = 3EE143D2CA2E4CBCAB639135 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0150936CF0DC4F64992AF1AA /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Users/Shared/XcodeVersions/Xcode@12.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Volumes/git/gnostr-xcode/ToolX/build";
+			};
+			name = Coverage;
+		};
+		04254D538A364ADEB758449B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/MinSizeRel";
+				DEVELOPMENT_TEAM = M684FYCYG6;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gnostr.configurator;
+				PRODUCT_NAME = configurator;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/configurator.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		0494B53A30FD4DD290D2E38D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		07F1CB63472A4299957FD962 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'ENABLE_MODULE_ECDH=1'",
+					"'ENABLE_MODULE_SCHNORRSIG=1'",
+					"'ENABLE_MODULE_EXTRAKEYS=1'",
+					"'ECMULT_WINDOW_SIZE=15'",
+					"'ECMULT_GEN_PREC_BITS=4'",
+					"'USE_ASM_X86_64=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"'-std=c90'",
+					"-fvisibility=hidden",
+					"-pedantic",
+					"-Wall",
+					"-Wcast-align",
+					"-Wconditional-uninitialized",
+					"-Wextra",
+					"-Wnested-externs",
+					"-Wno-long-long",
+					"-Wno-overlength-strings",
+					"-Wno-unused-function",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wundef",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = secp256k1_precomputed;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		087102970E984B0096361CC2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/RelWithDebInfo";
+				DEVELOPMENT_TEAM = M684FYCYG6;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/src/libsecp256k1.a",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gnostr.gnostr;
+				PRODUCT_NAME = gnostr;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/gnostr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		149D304CB7344DC0AAF24AC2 /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Coverage;
+		};
+		2AA4453362B04A8EA0396724 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		2B13D6325DA4494DBF93DEEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Users/Shared/XcodeVersions/Xcode@12.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Volumes/git/gnostr-xcode/ToolX/build";
+			};
+			name = Release;
+		};
+		3104404894C943788426A47C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/Release";
+				DEVELOPMENT_TEAM = M684FYCYG6;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gnostr.configurator;
+				PRODUCT_NAME = configurator;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/configurator.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		3D8FE0AD8B384B5F9A94303E /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'ENABLE_MODULE_ECDH=1'",
+					"'ENABLE_MODULE_SCHNORRSIG=1'",
+					"'ENABLE_MODULE_EXTRAKEYS=1'",
+					"'ECMULT_WINDOW_SIZE=15'",
+					"'ECMULT_GEN_PREC_BITS=4'",
+					"'USE_ASM_X86_64=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DCOVERAGE=1",
+					"--coverage",
+					"'-std=c90'",
+					"-fvisibility=hidden",
+					"-pedantic",
+					"-Wall",
+					"-Wcast-align",
+					"-Wconditional-uninitialized",
+					"-Wextra",
+					"-Wnested-externs",
+					"-Wno-long-long",
+					"-Wno-overlength-strings",
+					"-Wno-unused-function",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wundef",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = secp256k1_precomputed;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Coverage;
+		};
+		4B64DF82FFC34B1E84880F7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/Debug";
+				DEVELOPMENT_TEAM = M684FYCYG6;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "    $(inherited)";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gnostr.configurator;
+				PRODUCT_NAME = configurator;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/configurator.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		5A9ABEFDA19E4B5281C7B3B4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Users/Shared/XcodeVersions/Xcode@12.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Volumes/git/gnostr-xcode/ToolX/build";
+			};
+			name = MinSizeRel;
+		};
+		5BFC1587C7624E44A2B3CEE9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/src/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'ENABLE_MODULE_ECDH=1'",
+					"'ENABLE_MODULE_SCHNORRSIG=1'",
+					"'ENABLE_MODULE_EXTRAKEYS=1'",
+					"'ECMULT_WINDOW_SIZE=15'",
+					"'ECMULT_GEN_PREC_BITS=4'",
+					"'USE_ASM_X86_64=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"'-std=c90'",
+					"-fvisibility=hidden",
+					"-pedantic",
+					"-Wall",
+					"-Wcast-align",
+					"-Wconditional-uninitialized",
+					"-Wextra",
+					"-Wnested-externs",
+					"-Wno-long-long",
+					"-Wno-overlength-strings",
+					"-Wno-unused-function",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wundef",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = " /Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/x86_64/precomputed_ecmult.o /Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/x86_64/precomputed_ecmult_gen.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = secp256k1;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/secp256k1.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		8803C3DF8FDF48C7981BDC6B /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/src/Coverage";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'ENABLE_MODULE_ECDH=1'",
+					"'ENABLE_MODULE_SCHNORRSIG=1'",
+					"'ENABLE_MODULE_EXTRAKEYS=1'",
+					"'ECMULT_WINDOW_SIZE=15'",
+					"'ECMULT_GEN_PREC_BITS=4'",
+					"'USE_ASM_X86_64=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DCOVERAGE=1",
+					"--coverage",
+					"'-std=c90'",
+					"-fvisibility=hidden",
+					"-pedantic",
+					"-Wall",
+					"-Wcast-align",
+					"-Wconditional-uninitialized",
+					"-Wextra",
+					"-Wnested-externs",
+					"-Wno-long-long",
+					"-Wno-overlength-strings",
+					"-Wno-unused-function",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wundef",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = " /Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/x86_64/precomputed_ecmult.o /Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/x86_64/precomputed_ecmult_gen.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = secp256k1;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/secp256k1.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Coverage;
+		};
+		8CAE32EC43204289A378D0E9 /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Coverage;
+		};
+		8D5E2D6839124CA39E9A32BA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Users/Shared/XcodeVersions/Xcode@12.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Volumes/git/gnostr-xcode/ToolX/build";
+			};
+			name = RelWithDebInfo;
+		};
+		97D1FD059BB54FAE9FD2BAB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/src/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'ENABLE_MODULE_ECDH=1'",
+					"'ENABLE_MODULE_SCHNORRSIG=1'",
+					"'ENABLE_MODULE_EXTRAKEYS=1'",
+					"'ECMULT_WINDOW_SIZE=15'",
+					"'ECMULT_GEN_PREC_BITS=4'",
+					"'USE_ASM_X86_64=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"'-std=c90'",
+					"-fvisibility=hidden",
+					"-pedantic",
+					"-Wall",
+					"-Wcast-align",
+					"-Wconditional-uninitialized",
+					"-Wextra",
+					"-Wnested-externs",
+					"-Wno-long-long",
+					"-Wno-overlength-strings",
+					"-Wno-unused-function",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wundef",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = " /Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/x86_64/precomputed_ecmult.o /Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/x86_64/precomputed_ecmult_gen.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = secp256k1;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/secp256k1.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		A95FD5130A2A4580B439E483 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/src/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'ENABLE_MODULE_ECDH=1'",
+					"'ENABLE_MODULE_SCHNORRSIG=1'",
+					"'ENABLE_MODULE_EXTRAKEYS=1'",
+					"'ECMULT_WINDOW_SIZE=15'",
+					"'ECMULT_GEN_PREC_BITS=4'",
+					"'USE_ASM_X86_64=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"'-std=c90'",
+					"-fvisibility=hidden",
+					"-pedantic",
+					"-Wall",
+					"-Wcast-align",
+					"-Wconditional-uninitialized",
+					"-Wextra",
+					"-Wnested-externs",
+					"-Wno-long-long",
+					"-Wno-overlength-strings",
+					"-Wno-unused-function",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wundef",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = " /Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/x86_64/precomputed_ecmult.o /Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/x86_64/precomputed_ecmult_gen.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = secp256k1;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/secp256k1.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		B205C77BB073498E9F8A1828 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/MinSizeRel";
+				DEVELOPMENT_TEAM = M684FYCYG6;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/src/libsecp256k1.a",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gnostr.gnostr;
+				PRODUCT_NAME = gnostr;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/gnostr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		BEBC2E56D1A846288925C283 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'ENABLE_MODULE_ECDH=1'",
+					"'ENABLE_MODULE_SCHNORRSIG=1'",
+					"'ENABLE_MODULE_EXTRAKEYS=1'",
+					"'ECMULT_WINDOW_SIZE=15'",
+					"'ECMULT_GEN_PREC_BITS=4'",
+					"'USE_ASM_X86_64=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"'-std=c90'",
+					"-fvisibility=hidden",
+					"-pedantic",
+					"-Wall",
+					"-Wcast-align",
+					"-Wconditional-uninitialized",
+					"-Wextra",
+					"-Wnested-externs",
+					"-Wno-long-long",
+					"-Wno-overlength-strings",
+					"-Wno-unused-function",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wundef",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = secp256k1_precomputed;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		C0676BA7A7954B3895EF61FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/Release";
+				DEVELOPMENT_TEAM = M684FYCYG6;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/src/libsecp256k1.a",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gnostr.gnostr;
+				PRODUCT_NAME = gnostr;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/gnostr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		C384C446F4574ED4AC53E6CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'ENABLE_MODULE_ECDH=1'",
+					"'ENABLE_MODULE_SCHNORRSIG=1'",
+					"'ENABLE_MODULE_EXTRAKEYS=1'",
+					"'ECMULT_WINDOW_SIZE=15'",
+					"'ECMULT_GEN_PREC_BITS=4'",
+					"'USE_ASM_X86_64=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"'-std=c90'",
+					"-fvisibility=hidden",
+					"-pedantic",
+					"-Wall",
+					"-Wcast-align",
+					"-Wconditional-uninitialized",
+					"-Wextra",
+					"-Wnested-externs",
+					"-Wno-long-long",
+					"-Wno-overlength-strings",
+					"-Wno-unused-function",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wundef",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = secp256k1_precomputed;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		C9EE44911C2441E5BF8E5BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/Debug";
+				DEVELOPMENT_TEAM = M684FYCYG6;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "    $(inherited)";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/src/libsecp256k1.a",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gnostr.gnostr;
+				PRODUCT_NAME = gnostr;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/gnostr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		CF111550C4084D84A9FB0CC1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		D04177EAB35746F0A69AE16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		D05CB82029D2424EB43F21E6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		DE7987704B754CA8AA36E0DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		E267F44D65FC43E5AF2ED65B /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/Coverage";
+				DEVELOPMENT_TEAM = M684FYCYG6;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-DCOVERAGE=1",
+					"--coverage",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"--coverage",
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/src/libsecp256k1.a",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gnostr.gnostr;
+				PRODUCT_NAME = gnostr;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/gnostr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Coverage;
+		};
+		E3AE96DA3ED44119A4427CD6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		E3E6145FAA08499993D501FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'ENABLE_MODULE_ECDH=1'",
+					"'ENABLE_MODULE_SCHNORRSIG=1'",
+					"'ENABLE_MODULE_EXTRAKEYS=1'",
+					"'ECMULT_WINDOW_SIZE=15'",
+					"'ECMULT_GEN_PREC_BITS=4'",
+					"'USE_ASM_X86_64=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"'-std=c90'",
+					"-fvisibility=hidden",
+					"-pedantic",
+					"-Wall",
+					"-Wcast-align",
+					"-Wconditional-uninitialized",
+					"-Wextra",
+					"-Wnested-externs",
+					"-Wno-long-long",
+					"-Wno-overlength-strings",
+					"-Wno-unused-function",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wundef",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = secp256k1_precomputed;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		E43A8395E2494F6CB0B90FF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/src/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'ENABLE_MODULE_ECDH=1'",
+					"'ENABLE_MODULE_SCHNORRSIG=1'",
+					"'ENABLE_MODULE_EXTRAKEYS=1'",
+					"'ECMULT_WINDOW_SIZE=15'",
+					"'ECMULT_GEN_PREC_BITS=4'",
+					"'USE_ASM_X86_64=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"'-std=c90'",
+					"-fvisibility=hidden",
+					"-pedantic",
+					"-Wall",
+					"-Wcast-align",
+					"-Wconditional-uninitialized",
+					"-Wextra",
+					"-Wnested-externs",
+					"-Wno-long-long",
+					"-Wno-overlength-strings",
+					"-Wno-unused-function",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wundef",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = " /Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/x86_64/precomputed_ecmult.o /Volumes/git/gnostr-xcode/ToolX/build/secp256k1_precomputed.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/$(OBJECT_FILE_DIR_normal:base)/x86_64/precomputed_ecmult_gen.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = secp256k1;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/secp256k1.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		E632FCB05CDC4178932901B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		EC3E045B1BD6467CAC786AE1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/RelWithDebInfo";
+				DEVELOPMENT_TEAM = M684FYCYG6;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gnostr.configurator;
+				PRODUCT_NAME = configurator;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/configurator.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		F86C3BB1561D46BAB0210C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Users/Shared/XcodeVersions/Xcode@12.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk";
+				SYMROOT = "/Volumes/git/gnostr-xcode/ToolX/build";
+			};
+			name = Debug;
+		};
+		FBFCA5BBD7C945C99455AA0A /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Volumes/git/gnostr-xcode/ToolX/Coverage";
+				DEVELOPMENT_TEAM = M684FYCYG6;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+					"-DCOVERAGE=1",
+					"--coverage",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"--coverage",
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gnostr.configurator;
+				PRODUCT_NAME = configurator;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Volumes/git/gnostr-xcode/ToolX/build/configurator.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Coverage;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BDABEE385064F77BD366240 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3AE96DA3ED44119A4427CD6 /* RelWithDebInfo */,
+				E632FCB05CDC4178932901B7 /* Release */,
+				2AA4453362B04A8EA0396724 /* Debug */,
+				D05CB82029D2424EB43F21E6 /* MinSizeRel */,
+				149D304CB7344DC0AAF24AC2 /* Coverage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = RelWithDebInfo;
+		};
+		6673543BBEFD40019A153986 /* Build configuration list for PBXNativeTarget "secp256k1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95FD5130A2A4580B439E483 /* RelWithDebInfo */,
+				E43A8395E2494F6CB0B90FF9 /* Release */,
+				97D1FD059BB54FAE9FD2BAB4 /* Debug */,
+				5BFC1587C7624E44A2B3CEE9 /* MinSizeRel */,
+				8803C3DF8FDF48C7981BDC6B /* Coverage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = RelWithDebInfo;
+		};
+		6BE62A8EECF94F7096D198CA /* Build configuration list for PBXNativeTarget "gnostr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087102970E984B0096361CC2 /* RelWithDebInfo */,
+				C0676BA7A7954B3895EF61FD /* Release */,
+				C9EE44911C2441E5BF8E5BE4 /* Debug */,
+				B205C77BB073498E9F8A1828 /* MinSizeRel */,
+				E267F44D65FC43E5AF2ED65B /* Coverage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = RelWithDebInfo;
+		};
+		71173964D62E45129281D908 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF111550C4084D84A9FB0CC1 /* RelWithDebInfo */,
+				DE7987704B754CA8AA36E0DA /* Release */,
+				D04177EAB35746F0A69AE16A /* Debug */,
+				0494B53A30FD4DD290D2E38D /* MinSizeRel */,
+				8CAE32EC43204289A378D0E9 /* Coverage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = RelWithDebInfo;
+		};
+		8B252966BC3A4A9B863F37DA /* Build configuration list for PBXNativeTarget "configurator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3E045B1BD6467CAC786AE1 /* RelWithDebInfo */,
+				3104404894C943788426A47C /* Release */,
+				4B64DF82FFC34B1E84880F7F /* Debug */,
+				04254D538A364ADEB758449B /* MinSizeRel */,
+				FBFCA5BBD7C945C99455AA0A /* Coverage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = RelWithDebInfo;
+		};
+		985FA0DB9E8A4B28AC43DFA6 /* Build configuration list for PBXNativeTarget "secp256k1_precomputed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F1CB63472A4299957FD962 /* RelWithDebInfo */,
+				C384C446F4574ED4AC53E6CA /* Release */,
+				E3E6145FAA08499993D501FF /* Debug */,
+				BEBC2E56D1A846288925C283 /* MinSizeRel */,
+				3D8FE0AD8B384B5F9A94303E /* Coverage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = RelWithDebInfo;
+		};
+		EEE19072A8FD415E9ED6E611 /* Build configuration list for PBXProject "gnostr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D5E2D6839124CA39E9A32BA /* RelWithDebInfo */,
+				2B13D6325DA4494DBF93DEEE /* Release */,
+				F86C3BB1561D46BAB0210C46 /* Debug */,
+				5A9ABEFDA19E4B5281C7B3B4 /* MinSizeRel */,
+				0150936CF0DC4F64992AF1AA /* Coverage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = RelWithDebInfo;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8155BEFC4EDD4EE3B3FEAC2F /* Project object */;
+}
