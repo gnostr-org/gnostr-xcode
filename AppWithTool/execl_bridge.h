@@ -15,6 +15,6 @@
 #include <unistd.h>
 #include "async.h"
 
-int execcl_bridge(int argc, char* argv[]);
+int execl_bridge(int argc, char* argv[]);
 
 #endif /* execcl_bridge_h */

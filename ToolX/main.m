@@ -11,21 +11,28 @@
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
 #include "execv_bridge.h"
-#include "execcl_bridge.h"
+#include "execl_bridge.h"
 
 #include "async.h"
 
-void report() {
+void main_report(const char *path, char *const argv[]){
 
-    printf("ToolX:report()\n");
+    int argvlen = 0;
+/// printf("execv_bridge:\n");
+    printf("argv[%d]:%s\n", argvlen, argv[argvlen]); argvlen++;
 
+    while(argv[argvlen] != NULL){
+
+        printf("argv[argvlen++] = %s\n", argv[argvlen++]);
+
+    }
 }
 
 int main(int argc, char *argv[]) {
 
 @autoreleasepool {
 
-    report();
+    main_report((const char *)argv, (char *const *)argv);
 
 /// int logargv(int *count, char *argv[]);
 /// logargv(&argc, (char **)argv);
@@ -36,7 +43,7 @@ int main(int argc, char *argv[]) {
     execv_bridge((const char *)argv, (char *const *)argv);
 
 /// int execcl_bridge(int argc, char* argv[]);
-      //execcl_bridge(argc, (char **)argv);
+    // execcl_bridge(argc, (char **)argv);
 
     }
 

@@ -5,12 +5,26 @@
 //  Created by git on 5/18/23.
 //
 
-#include "execcl_bridge.h"
+#include "execl_bridge.h"
 
-#define BASH_EXEC "/usr/local/bin/bash"
+#define BASH_EXEC "/bin/bash"
 #define LS_EXEC "/bin/ls"
 
 #define BSIZE 50
+
+void execl_bridge_report(const char *path, char *const argv[]){
+
+    int argvlen = 0;
+/// printf("execv_bridge:\n");
+    printf("argv[%d]:%s\n", argvlen, argv[argvlen]); argvlen++;
+
+    while(argv[argvlen] != NULL){
+
+        printf("argv[argvlen++] = %s\n", argv[argvlen++]);
+
+    }
+}
+
 
 int execcl_bridge(int argc, char* argv[]){
 
@@ -35,9 +49,14 @@ int execcl_bridge(int argc, char* argv[]){
     /// Message from debugger: Terminated due to signal 5
     /// execute the command
     if(execl(BASH_EXEC, BASH_EXEC, "-c", buffer, NULL) < 0){
+        execl_bridge_report((char const *)argv[0], (char *const *)argv);
         printf("execcl_bridge:Something terrible happended!");
         return 1;
     }
+
+    ///int     execl(const char * __path, const char * __arg0, ...) __WATCHOS_PROHIBITED __TVOS_PROHIBITED;
+
+    /// execl_bridge_report((char const *)argv[0], (char *const *)argv);
 
     /// Program ended with exit code: 0
     return 0;

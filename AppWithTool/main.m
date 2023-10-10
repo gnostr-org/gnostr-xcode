@@ -15,7 +15,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include "execv_bridge.h"
-#include "execcl_bridge.h"
+#include "execl_bridge.h"
 #include "async.h"
 
 //int execv(const char *path, char *const argv[]);
@@ -24,8 +24,6 @@
 //int execvpe(const char *file, char *const argv[], char *const envp[]);
 
 void runScript(NSString* scriptName);
-//main.h end
-//#import main.h
 
 int execve(const char *path, char *const argv[], char *const envp[]){ return 0; }
 int execvp(const char *file, char *const argv[]){ return 0; }
@@ -72,6 +70,7 @@ int main(int argc, char const *argv[]) {
         //if(success){printf("%d",success);};
         //execv_bridge(&argc,(char *const *)argv);
         //execcl_bridge(*count,(char *const *)argv);
+        NSLog (@"main.m:runScript.sh");
         runScript(@"Script.sh");
 
     }

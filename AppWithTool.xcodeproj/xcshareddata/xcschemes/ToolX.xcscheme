@@ -67,16 +67,24 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "Schema:ToolX:Run:arg1"
+            argument = "/bin/ls -a &gt; ~/list.txt"
             isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Applications"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "Schema:ToolX:Run:arg1"
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "Schema:ToolX:Run:arg2"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "Schema:ToolX:Run:arg3"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>
