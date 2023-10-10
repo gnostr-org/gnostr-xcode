@@ -11,6 +11,8 @@
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
 #include "execv_bridge.h"
+#include "execcl_bridge.h"
+
 #include "async.h"
 
 void report() {
@@ -20,14 +22,17 @@ void report() {
 }
 
 int main(int argc, char *argv[]) {
+
     @autoreleasepool {
-    report();
-// int execv_bridge(const char *path, char *const argv[]);
-    //execv_bridge(argv[0],(char *const *)argv);
+        report();
+        /// int logargv(int *count, char *argv[]);
+        /// logargv(&argc, (char **)argv);
 
-    execv_bridge((const char *)argv, (char *const *)argv);
+/// int execv_bridge(const char *path, char *const argv[]);
+        //execv_bridge((const char *)argv, (char *const *)argv);
+/// int execcl_bridge(int argc, char* argv[]);
+        execcl_bridge(argc, (char **)argv);
 
-        logargv(&argc, (char *const *)argv[0]);
 
     }
     return 0;

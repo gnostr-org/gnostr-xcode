@@ -14,7 +14,7 @@ int logargv(int *count, char *argv[]){
     while(argv[argvlen] != NULL){
         while(argv[*count-i] != NULL){
         printf("i=%d\n",i);
-        printf("%s\n", argv);
+        printf("%s\n", argv[i]);
         i--;
         }
     }

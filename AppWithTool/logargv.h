@@ -9,5 +9,6 @@
 #define logargv_h
 #include <stdio.h>
 #include "async.h"
+//int execv_bridge(const char *path, char *const argv[]);
 int logargv(int *count, char *argv[]);
 #endif /* logargv_h */
