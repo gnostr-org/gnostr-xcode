@@ -777,7 +777,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP9MSC9X74;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INSTALL_PATH = /usr/bin;
+				INSTALL_PATH = /usr/local/bin;
 				OTHER_CODE_SIGN_FLAGS = "$(inherited) -i $(PRODUCT_BUNDLE_IDENTIFIER)";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.bitcoincore.AppWithTool.ToolX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -796,7 +796,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP9MSC9X74;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INSTALL_PATH = /usr/bin;
+				INSTALL_PATH = /usr/local/bin;
 				OTHER_CODE_SIGN_FLAGS = "$(inherited) -i $(PRODUCT_BUNDLE_IDENTIFIER)";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.bitcoincore.AppWithTool.ToolX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
