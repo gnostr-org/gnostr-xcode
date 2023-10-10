@@ -95,96 +95,6 @@
          </Group>
       </Group>
       <Group
-         location = "group:Build"
-         name = "Build">
-         <Group
-            location = "group:Products"
-            name = "Products">
-            <FileRef
-               location = "group:/Volumes/git/gnostr-xcode/Build/Products/libsecp256k1.a">
-            </FileRef>
-            <Group
-               location = "group:Debug"
-               name = "Debug">
-               <FileRef
-                  location = "group:aes.h">
-               </FileRef>
-               <FileRef
-                  location = "group:base64.h">
-               </FileRef>
-               <FileRef
-                  location = "group:clock_gettime.h">
-               </FileRef>
-               <FileRef
-                  location = "group:compiler.h">
-               </FileRef>
-               <FileRef
-                  location = "group:config.h">
-               </FileRef>
-               <FileRef
-                  location = "group:cursor.h">
-               </FileRef>
-               <FileRef
-                  location = "group:endian.h">
-               </FileRef>
-               <FileRef
-                  location = "group:hex.h">
-               </FileRef>
-               <FileRef
-                  location = "group:proof.h">
-               </FileRef>
-               <FileRef
-                  location = "group:random.h">
-               </FileRef>
-               <FileRef
-                  location = "group:sha256.h">
-               </FileRef>
-               <FileRef
-                  location = "group:ToolX">
-               </FileRef>
-               <Group
-                  location = "group:usr"
-                  name = "usr">
-                  <Group
-                     location = "group:local"
-                     name = "local">
-                     <Group
-                        location = "group:include"
-                        name = "include">
-                        <FileRef
-                           location = "group:secp256k1.h">
-                        </FileRef>
-                        <FileRef
-                           location = "group:secp256k1_ecdh.h">
-                        </FileRef>
-                        <FileRef
-                           location = "group:secp256k1_extrakeys.h">
-                        </FileRef>
-                        <FileRef
-                           location = "group:secp256k1_preallocated.h">
-                        </FileRef>
-                        <FileRef
-                           location = "group:secp256k1_recovery.h">
-                        </FileRef>
-                        <FileRef
-                           location = "group:secp256k1_schnorrsig.h">
-                        </FileRef>
-                     </Group>
-                  </Group>
-               </Group>
-            </Group>
-         </Group>
-      </Group>
-      <FileRef
-         location = "group:GNUmakefile">
-      </FileRef>
-      <FileRef
-         location = "group:LICENSE">
-      </FileRef>
-      <FileRef
-         location = "group:README.md">
-      </FileRef>
-      <Group
          location = "group:ToolX"
          name = "ToolX">
          <FileRef
@@ -441,9 +351,6 @@
             location = "group:clock_gettime.h">
          </FileRef>
          <FileRef
-            location = "group:CMakeLists.txt">
-         </FileRef>
-         <FileRef
             location = "group:compiler.h">
          </FileRef>
          <FileRef
@@ -455,16 +362,6 @@
          <FileRef
             location = "group:cursor.h">
          </FileRef>
-         <Group
-            location = "group:Debug"
-            name = "Debug">
-            <FileRef
-               location = "group:configurator">
-            </FileRef>
-            <FileRef
-               location = "group:gnostr">
-            </FileRef>
-         </Group>
          <FileRef
             location = "group:endian.h">
          </FileRef>
