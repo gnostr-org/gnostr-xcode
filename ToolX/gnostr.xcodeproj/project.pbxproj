@@ -678,7 +678,7 @@
 					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
 					"$(inherited)",
 				);
-				INSTALL_PATH = "";
+				INSTALL_PATH = /usr/local/bin;
 				OTHER_CFLAGS = (
 					"-DNDEBUG",
 					"$(inherited)",
@@ -1190,7 +1190,7 @@
 					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
 					"$(inherited)",
 				);
-				INSTALL_PATH = "";
+				INSTALL_PATH = /usr/local/bin;
 				OTHER_CFLAGS = (
 					"-DNDEBUG",
 					"$(inherited)",
@@ -1288,7 +1288,7 @@
 					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
 					"$(inherited)",
 				);
-				INSTALL_PATH = "";
+				INSTALL_PATH = /usr/local/bin;
 				OTHER_CFLAGS = (
 					"-DNDEBUG",
 					"$(inherited)",
@@ -1386,7 +1386,7 @@
 					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
 					"$(inherited)",
 				);
-				INSTALL_PATH = "";
+				INSTALL_PATH = /usr/local/bin;
 				OTHER_CFLAGS = "    $(inherited)";
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
@@ -1520,7 +1520,7 @@
 					"/Volumes/git/gnostr-xcode/ToolX/ext/secp256k1/include",
 					"$(inherited)",
 				);
-				INSTALL_PATH = "";
+				INSTALL_PATH = /usr/local/bin;
 				OTHER_CFLAGS = (
 					"-DCOVERAGE=1",
 					"--coverage",
