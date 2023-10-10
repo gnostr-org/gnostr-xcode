@@ -2,15 +2,15 @@ if (MSVC)
  cmake_minimum_required(VERSION 3.26)
 else()
  cmake_minimum_required(VERSION 3.15)
-endif() 
+endif()
 set(CMAKE_BUILD_TYPE Debug)
-project (nostril C)
+project (gnostr C)
 
 include_directories(${CMAKE_SOURCE_DIR}/ext/secp256k1/include)
 add_subdirectory(${CMAKE_SOURCE_DIR}/ext/secp256k1)
 
 #//////////////////////////
-#windows.h header file has macros for min and max, nostril defines max
+#windows.h header file has macros for min and max, gnostr defines max
 #//////////////////////////
 
 if (MSVC)
@@ -20,7 +20,7 @@ if (MSVC)
 endif()
 
 #//////////////////////////
-#sources 
+#sources
 #//////////////////////////
 
 set(src ${src})
@@ -57,12 +57,12 @@ endif()
 #executables
 #//////////////////////////
 
-# tool to generate file 'config.h' , generate from a shell with 
+# tool to generate file 'config.h' , generate from a shell with
 # configurator.exe > config.h
 add_executable(configurator configurator.c)
 
-add_executable(nostril ${src} nostril.c)
-target_link_libraries (nostril ${lib_dep})
+add_executable(gnostr ${src} gnostr.c)
+target_link_libraries (gnostr ${lib_dep})
 
 #//////////////////////////
 # generate  config.h
@@ -71,7 +71,7 @@ target_link_libraries (nostril ${lib_dep})
 add_custom_command(
     TARGET configurator
     POST_BUILD
-    COMMAND configurator > config.h 
+    COMMAND configurator > config.h
     COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_BINARY_DIR}/config.h" ${CMAKE_SOURCE_DIR}
     COMMENT "generating config.h"
 )
